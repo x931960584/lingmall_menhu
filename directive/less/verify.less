@@ -1,0 +1,267 @@
+@import "../../less/colors.less";
+lmverify {
+	.verify {
+		margin-top:20px;
+		.leftbar {
+			float:left;
+			width:200px;
+			height:50px;
+			line-height: 50px;
+			text-align: center;
+			border:1px solid @main-color-border;
+			border-radius:3px;
+			background-color:#fff;
+			margin-left:40px;
+			font-size:16px;
+		}
+		.right-content {
+			padding:0 50px;
+			.content-title {
+				width:100%;
+				height:50px;
+				line-height: 50px;
+				text-align: center;
+				background-color:@main-color-background;
+				.title-text {
+					width:120px;
+					background-color:@main-color-current;
+					cursor: pointer;
+				}
+			}
+			.audit-barcode {
+				.content-detail {
+					font-size:14px;
+					width:100%;
+					height:50px;
+					line-height: 50px;
+					lmselect{
+						width: 220px
+					}
+					lmselect{
+						.status-select{
+							height: 30px;
+							line-height: 30px;
+							box-sizing: content-box;
+							margin-bottom: 8px;
+						}
+					}
+					.time-text ,.status-text,.goods-data,.barcode-text {
+						display: inline-block;
+					}
+					.time-detail {
+						margin-bottom:10px;
+						display:inline-block;
+						.start-date,.end-date {
+							float:left;
+							width:100px;
+							height:30px;
+							border:1px solid @main-color-border;
+							border-radius:3px;
+							cursor: pointer;
+							display:inline-block;
+						}
+						.split {
+							float:left;
+							width:30px;
+							line-height: 30px;
+							text-align: center;
+						}
+					}
+					.status-text,.barcode-text {
+						margin-left:50px;
+					}
+					.btn {
+						width:80px;
+						height:30px;
+						line-height: 30px;
+						text-align: center;
+						border-radius: 3px;
+						cursor: pointer;
+						display: inline-block;
+					}
+					.search-btn {
+						background-color:@main-color-current;
+						margin:0 0 10px 50px;
+						.search-icon {
+							float:left;
+							font-size:26px;
+							margin-left:10px;
+						}
+						.search-text {
+							margin:2px 0 0 -10px;
+						}
+					}
+					.barcode-input {
+						width:168px;
+						height:30px;
+						line-height: 30px;
+						padding-left:10px;
+						border:1px solid @main-color-border;
+						outline: none;
+						margin-bottom:40px;
+						border-radius:3px;
+					}
+				}
+				.choose-all {
+					width:100%;
+					height:40px;
+					line-height: 40px;
+					background-color:@main-color-background;
+					.choose-all-text {
+						width:40px;
+						display:inline-block;
+						cursor: pointer;
+					}
+					.batch-audit-btn {
+						width:100px;
+						height:26px;
+						line-height: 26px;
+						text-align: center;
+						border-radius:3px;
+						color:#fff;
+						background-color:@main-color-green;
+						display:inline-block;
+						margin-bottom:7px;
+						cursor: pointer;
+					}
+					.pager {
+						float:right;
+						font-size: 12px;
+						margin-right:10px;
+						display:flex;
+						.goods-total,.pager-num {
+							margin-right:10px;
+						}
+						.prev,.next {
+							width:50px;
+							height:20px;
+							line-height: 19px;
+							text-align: center;
+							border-radius:3px;
+							margin:10px 10px 0 0;
+							cursor: pointer;
+						}
+						.prev {
+							border:1px solid @main-color-border;
+						}
+						.next {
+							border:1px solid @main-color-current;
+							color:@main-color-current;
+						}
+						.prevNum {
+							color:@main-color-current;
+						}
+					}
+				}
+				.checkbox {
+					float:left;
+					width:14px;
+					height:14px;
+					background:url("../../image/common/checkbox.png");
+					display:inline-block;
+					margin: 14px 10px 0 10px;
+					cursor: pointer;
+				}
+				.checkon {
+					background-position: 0px -14px;
+				}
+				.goods-list {
+					width:100%;
+					.thead ,tr{
+						width:100%;
+						height:50px;
+						line-height: 50px;
+						text-align: center;
+					}
+					.thead {
+						font-size:16px;
+						border-bottom:4px solid @main-color-border;					
+					}
+					.tbody {
+						width:100%;
+						font-size:12px;
+						tr {
+							border-bottom:2px solid @main-color-border;
+							td  {
+								margin:0;
+								.checkbox-table {
+									margin-top:20px;
+								}
+								.barcode {
+									
+								}
+								.detail {
+									margin-right:10px;
+									color:@main-color-blue;
+									cursor: pointer;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/*.batch-list {
+		width:100%;
+		.thead ,tr{
+			width:100%;
+			height:50px;
+			line-height: 50px;
+			text-align: left;
+		}
+		.thead {
+			font-size:16px;
+			border-bottom:4px solid @main-color-border;					
+		}
+		.tbody {
+			width:100%;
+			font-size:12px;
+			tr {
+				border-bottom:2px solid @main-color-border;
+				.progress,.detail {
+					color:@main-color-blue;
+					cursor: pointer;
+				}
+			}
+		}
+	}*/
+	/*.progress-detail {
+		width:260px;
+		height:140px;
+		border:1px solid @main-color-border;
+		box-shadow: 0 0 10px #888;
+		position: absolute;
+		top:320px;
+		.pro-title {
+			font-size: 16px;
+			height:40px;
+			line-height: 40px;
+			text-align: left;
+			padding-left:10px;
+			border-bottom: 1px solid @main-color-border;
+			.close {
+				float:right;
+				font-size:38px;
+				margin-right:10px;
+				cursor: pointer;
+			}
+		}
+		.list-detail {
+			font-size: 12px;
+			margin-top:10px;
+			text-align: center;
+			li {
+				height:24px;
+				line-height: 24px;
+
+			}
+			.count {
+				color:red;
+			}
+		}
+	}*/
+	
+	
+}

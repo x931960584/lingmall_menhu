@@ -1,0 +1,146 @@
+@import "../../less/colors.less";
+@import "../../less/ui.less";
+lmshopcart {
+	font-family: "微软雅黑";
+	.shopcart {
+		width:100%;
+		min-width:1200px;
+		min-height:890px;
+		padding:0 50px;
+		background-color:#fafafa;
+		.total-data {
+			width:100%;
+			height:50px;
+			padding-top:17px;
+			.total-count {
+				font-size:16px;
+				height:30px;
+				line-height: 30px;
+				border-bottom:3px solid @main-color-current;
+				padding:0 10px;
+				display:inline-block;
+			}
+		}
+		.checkbox {
+			float:left;
+			width:14px;
+			height:14px;
+			background:url("../../image/common/checkbox.png");
+			display:inline-block;
+			margin: 14px 10px 0 10px;
+			cursor: pointer;
+		}
+		.checkon {
+			background-position: 0px -14px;
+		}
+		.table {
+			width:100%;
+		}
+		.shopgoods-box {
+			.thead {
+				tr {
+					font-size:16px;
+					height:50px;
+					line-height: 50px;
+					background-color:#f2f2f2;
+				}
+				.padd-left {
+					padding-left:30px;
+				}
+			}
+			.tbody {
+				font-size:12px;
+				.choose-all {
+					width:100%;
+					height:40px;
+					line-height: 40px;
+					background-color:#fcfcfc;
+					border-bottom:1px solid #f2f2f2;
+				}
+				tr {
+					height:60px;
+					line-height: 60px;
+					background-color:#fff;
+					border-bottom:1px solid @main-color-border;
+					.checkbox-pos {
+						margin-top:23px;
+					}
+					.del {
+						color:@main-color-blue;
+						cursor: pointer;
+					}
+				}
+				.seemore {
+					height:50px;
+					line-height: 50px;
+					text-align: center;
+					font-size:14px;
+					cursor: pointer;
+					border:none;
+					color:#999;
+				}
+			}
+		}
+		.settlement {
+			/*width:100%;*/
+			/*min-width:1200px;*/
+			border:1px solid @main-color-border;
+			border-left:none;
+			border-right:none;
+			background-color:#fff;
+			margin-top:20px;
+			tr {
+				height:58px;
+				line-height: 58px;
+				td {
+
+				}
+			}
+			.choose-all {
+				/*float:left;*/
+				padding-left:5px;
+				font-size:12px;
+				.del-choose {
+					padding-left:30px;
+					cursor:pointer;
+				}
+				.checkbox-pos {
+					margin-top:22px;
+				}
+			}
+			
+			.go-settlement {
+				text-align: right;
+				.price,.count{
+					font-size: 16px;
+				}
+				.count {
+					padding-right:10px;
+				}
+				.free-count {
+					padding-right:10px;
+					color: #ff0000;
+				}
+				.settlement-btn {
+					width:120px;
+					height:60px;
+					line-height: 60px;
+					text-align: center;
+					font-size:18px;
+					color:#fff;
+					background-color:@main-color-current;
+					cursor: pointer;
+					display: inline-block;
+					&.empty{
+						background-color: #ddd;
+						color:white;
+					}
+				}
+				.detail {
+					display:inline-block;
+					margin-bottom:-22px;
+				}
+			}
+		}
+	}
+}

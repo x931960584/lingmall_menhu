@@ -1,0 +1,61 @@
+<div class="wrap">
+	<div class="container">
+		<dl class="all-category" ng-class="{'moreHeight':isMoreHeight==true}">
+			<dt class="category">所有分类</dt>
+			<dd class="mar-left42" ng-class="{'current':$index==currCategoryIndex}" ng-repeat="c in categoryData" ng-click="setCurrCategoryIndex($index)">{{c.value}}</dd>
+			<span ng-click="seeMore()" ng-show="!isShowSeemore">更多 
+				<i class="iconfont" >&#xe61f;</i>
+			</span>
+			<span ng-click="hideMore()" ng-show="isShowSeemore">收起 
+				<i class="iconfont">&#xe61e;</i>
+			</span>
+		</dl>
+		<dl class="sidebar">
+			<dt class="sidebar-title">{{categoryData[currCategoryIndex].value}}</dt>
+			<dd ng-class="{'sidebar-current':$index==currSubcategoryIndex}" ng-repeat="s in (categoryData[currCategoryIndex].subset)" ng-click="setCurrSubcategoryIndex($index)">
+				{{s.value}}
+			</dd>
+		</dl>
+		<div class="right-content">
+			<div class="filter-result">
+				<div class="filter-text">筛选结果 (共<span class="total-count">{{itemCount}}</span>件)</div>
+			</div>
+			<div class="filter-box">
+				<div class="result-text">
+					<span>{{categoryData[currCategoryIndex].value}}</span> > 
+					<span>{{categoryData[currCategoryIndex].subset[currSubcategoryIndex].value}}</span>
+					<div class="page-min">
+						<i class="iconfont"  ng-click="pagePrev()">&#xe617;</i>
+						
+						<span class="currpage">{{pageIndex+1}}</span>/
+						<span class="totalpage">{{pageCount||'1'}}</span>
+						<i class="iconfont"  ng-click="pageNext()">&#xe616;</i>
+					</div>
+				</div>
+				<!-- <div class="choose-all">
+					<div class="checkbox" ng-class="{'checkon':isCheckAll}" ng-click="checkId('all')"></div>全选
+					<div  ng-click="batchAddMygood()" ng-class="{'add-goods-btn':canBatchAddGood,'addgoods-btn':!canBatchAddGood}">加入商品库</div>
+				</div> -->
+			</div>
+			<div class="category-list">
+				<div class="category-detail" ng-repeat="n in data" ng-mouseenter="showCheckbox(n.goodsId)" ng-mouseleave="hideCheckbox()" >
+					<!-- <div class="checkbox checkbox-pos" ng-class="{'checkon':checkIds.indexOf(n.goodsId)>=0}" ng-show="currHoverId == n.goodsId || checkIds.indexOf(n.goodsId)>=0" ng-click="checkId(n.goodsId)"></div> -->
+					<div class="category-img">
+						<img ng-src="{{n.pic}}" ng-click="linkToDetail(n.goodsId)">
+					</div>
+					<div class="category-text">
+						<div class="cate-text">
+							<!-- <div class="cate-name">名&nbsp;称:</div> -->
+							<!-- <div class="name-text">条形码:</div> -->
+						</div>
+						<div class="cate-data">
+							<div class="cate-name" title="{{n.name}}">{{n.name}}</div>
+							<!-- <div class="name-text">{{n.code}}</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<lmpager></lmpager>
+		</div>
+	</div>
+</div>

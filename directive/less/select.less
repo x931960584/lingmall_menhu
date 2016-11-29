@@ -1,0 +1,58 @@
+@import "../../less/colors.less";
+lmselect{
+	@selectorWidth:160px;
+	@selectorHeight:40px;
+	.status-select {
+		/*position: relative;*/
+		min-width:@selectorWidth;
+		font-size: 14px;
+		height:@selectorHeight;
+		line-height: @selectorHeight;
+		border:1px solid @main-color-border;
+		border-radius:3px;
+		display: inline-block;
+		cursor: pointer;
+
+		.xiala {
+			float: right;
+			color:#999;
+			cursor: pointer;
+			font-size: 30px;
+			margin-top:-2px;
+		}
+		.selector{
+			width: @selectorWidth;
+			min-width: 860px;
+			z-index: 2;
+			font-size: 14px;
+			margin-top:-2px;
+			position: absolute;
+			border:1px solid @main-color-border;
+			border-radius:3px;
+			display: inline-block;
+			cursor: pointer;
+			background-color: white;
+			.option{
+				float:left;
+				padding-left: 26px;
+				text-align: left;
+			}
+		}
+		.selected{
+			text-align: center;
+			padding:0 5px;
+		}
+
+			
+		&.vertical{
+			.selector{
+				min-width: 0px;
+			}
+			.option{
+				float: none;
+			}
+		}
+
+	}
+
+}

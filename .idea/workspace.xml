@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="109293ad-9f14-430f-ad90-102695d48b16" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/customservice/gou-03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/customservice/klk.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/customservice/line111-03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/customservice/log-02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/customservice/logTop.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/customservice/pro-02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/customservice/pro-03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/customservice/pro-04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/customservice/pro-05.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/customservice/pro-06.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/customservice/pro.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/customservice/tiao-03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/home/bigFount.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/home/bigFount2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/home/ghjhj-20.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/home/ghjhj.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/home/hezuo-02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/home/hg1-02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/home/hg1-03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/home/hg1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/home/icon-03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/home/icon-07.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/home/icon-11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/home/kk12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/home/line111-03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/home/line22.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/home/logTop.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/home/main-04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/home/main-07.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/home/phoneTop.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/home/timeTop.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/integration/int-02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/integration/int-03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/integration/int-04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/integration/int.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/script/integrationpage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/directive/html/integration.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/directive/less/integration.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/directive/script/integration.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/integrationpage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/about.html" afterPath="$PROJECT_DIR$/directive/html/about.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/allorders.html" afterPath="$PROJECT_DIR$/directive/html/allorders.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/applyservice.html" afterPath="$PROJECT_DIR$/directive/html/applyservice.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/auditmanagement.html" afterPath="$PROJECT_DIR$/directive/html/auditmanagement.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/batchsearch.html" afterPath="$PROJECT_DIR$/directive/html/batchsearch.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/cashierdesk.html" afterPath="$PROJECT_DIR$/directive/html/cashierdesk.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/catebar.html" afterPath="$PROJECT_DIR$/directive/html/catebar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/categorydata.html" afterPath="$PROJECT_DIR$/directive/html/categorydata.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/copyright.html" afterPath="$PROJECT_DIR$/directive/html/copyright.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/customservice.html" afterPath="$PROJECT_DIR$/directive/html/customservice.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/datacenter.html" afterPath="$PROJECT_DIR$/directive/html/datacenter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/detail.html" afterPath="$PROJECT_DIR$/directive/html/detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/goodsdata.html" afterPath="$PROJECT_DIR$/directive/html/goodsdata.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/goodslist.html" afterPath="$PROJECT_DIR$/directive/html/goodslist.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/headbar.html" afterPath="$PROJECT_DIR$/directive/html/headbar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/home.html" afterPath="$PROJECT_DIR$/directive/html/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/leftsidebar.html" afterPath="$PROJECT_DIR$/directive/html/leftsidebar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/login.html" afterPath="$PROJECT_DIR$/directive/html/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/minpager.html" afterPath="$PROJECT_DIR$/directive/html/minpager.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/modal.html" afterPath="$PROJECT_DIR$/directive/html/modal.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/mygoods.html" afterPath="$PROJECT_DIR$/directive/html/mygoods.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/myorders.html" afterPath="$PROJECT_DIR$/directive/html/myorders.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/pager.html" afterPath="$PROJECT_DIR$/directive/html/pager.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/productdetail.html" afterPath="$PROJECT_DIR$/directive/html/productdetail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/register.html" afterPath="$PROJECT_DIR$/directive/html/register.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/select.html" afterPath="$PROJECT_DIR$/directive/html/select.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/shopcart.html" afterPath="$PROJECT_DIR$/directive/html/shopcart.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/shopcartbtn.html" afterPath="$PROJECT_DIR$/directive/html/shopcartbtn.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/sidebar.html" afterPath="$PROJECT_DIR$/directive/html/sidebar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/topbar.html" afterPath="$PROJECT_DIR$/directive/html/topbar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/topmenu.html" afterPath="$PROJECT_DIR$/directive/html/topmenu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/verify.html" afterPath="$PROJECT_DIR$/directive/html/verify.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/html/verifydetail.html" afterPath="$PROJECT_DIR$/directive/html/verifydetail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/less/batchsearch.less" afterPath="$PROJECT_DIR$/directive/less/batchsearch.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/less/copyright.less" afterPath="$PROJECT_DIR$/directive/less/copyright.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/less/customservice.less" afterPath="$PROJECT_DIR$/directive/less/customservice.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/less/detail.less" afterPath="$PROJECT_DIR$/directive/less/detail.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/less/home.less" afterPath="$PROJECT_DIR$/directive/less/home.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/less/login.less" afterPath="$PROJECT_DIR$/directive/less/login.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/less/productdetail.less" afterPath="$PROJECT_DIR$/directive/less/productdetail.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/less/register.less" afterPath="$PROJECT_DIR$/directive/less/register.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/less/shopcart.less" afterPath="$PROJECT_DIR$/directive/less/shopcart.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/less/topbar.less" afterPath="$PROJECT_DIR$/directive/less/topbar.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/script/allorders.js" afterPath="$PROJECT_DIR$/directive/script/allorders.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/script/applyservice.js" afterPath="$PROJECT_DIR$/directive/script/applyservice.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/script/batchsearch.js" afterPath="$PROJECT_DIR$/directive/script/batchsearch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/script/batchsearchbtn.js" afterPath="$PROJECT_DIR$/directive/script/batchsearchbtn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/script/categorydata.js" afterPath="$PROJECT_DIR$/directive/script/categorydata.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/script/confirmlogin.js" afterPath="$PROJECT_DIR$/directive/script/confirmlogin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/script/datacenter.js" afterPath="$PROJECT_DIR$/directive/script/datacenter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/script/detail.js" afterPath="$PROJECT_DIR$/directive/script/detail.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/script/goodslist.js" afterPath="$PROJECT_DIR$/directive/script/goodslist.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/script/headbar.js" afterPath="$PROJECT_DIR$/directive/script/headbar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/script/home.js" afterPath="$PROJECT_DIR$/directive/script/home.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/script/login.js" afterPath="$PROJECT_DIR$/directive/script/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/script/myorders.js" afterPath="$PROJECT_DIR$/directive/script/myorders.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/script/productdetail.js" afterPath="$PROJECT_DIR$/directive/script/productdetail.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/script/register.js" afterPath="$PROJECT_DIR$/directive/script/register.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/script/select.js" afterPath="$PROJECT_DIR$/directive/script/select.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/script/shopcart.js" afterPath="$PROJECT_DIR$/directive/script/shopcart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/script/topbar.js" afterPath="$PROJECT_DIR$/directive/script/topbar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/script/verify.js" afterPath="$PROJECT_DIR$/directive/script/verify.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directive/script/verifydetail.js" afterPath="$PROJECT_DIR$/directive/script/verifydetail.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/colors.less" afterPath="$PROJECT_DIR$/less/colors.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.html" afterPath="$PROJECT_DIR$/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/main.js" afterPath="$PROJECT_DIR$/script/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/route.js" afterPath="$PROJECT_DIR$/script/route.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/script/user.js" afterPath="$PROJECT_DIR$/service/script/user.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/aboutpage.html" afterPath="$PROJECT_DIR$/view/aboutpage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/applyservicepage.html" afterPath="$PROJECT_DIR$/view/applyservicepage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/auditmanagementpage.html" afterPath="$PROJECT_DIR$/view/auditmanagementpage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/cashierdeskpage.html" afterPath="$PROJECT_DIR$/view/cashierdeskpage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/categorydatapage.html" afterPath="$PROJECT_DIR$/view/categorydatapage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/customservicepage.html" afterPath="$PROJECT_DIR$/view/customservicepage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/datacenterpage.html" afterPath="$PROJECT_DIR$/view/datacenterpage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/detailpage.html" afterPath="$PROJECT_DIR$/view/detailpage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/goodsdatapage.html" afterPath="$PROJECT_DIR$/view/goodsdatapage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/goodslistpage.html" afterPath="$PROJECT_DIR$/view/goodslistpage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/homepage.html" afterPath="$PROJECT_DIR$/view/homepage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/index.html" afterPath="$PROJECT_DIR$/view/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/loginpage.html" afterPath="$PROJECT_DIR$/view/loginpage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/mygoodspage.html" afterPath="$PROJECT_DIR$/view/mygoodspage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/myorderspage.html" afterPath="$PROJECT_DIR$/view/myorderspage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/productdetailpage.html" afterPath="$PROJECT_DIR$/view/productdetailpage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/registerpage.html" afterPath="$PROJECT_DIR$/view/registerpage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/shopcartpage.html" afterPath="$PROJECT_DIR$/view/shopcartpage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/verifydetailpage.html" afterPath="$PROJECT_DIR$/view/verifydetailpage.html" />
+    </list>
+    <ignored path="lingmall.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="lingmall" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/directive/html/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="99" column="23" selection-start-line="99" selection-start-column="23" selection-end-line="99" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customservice.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/directive/html/customservice.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.375">
+              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/directive/html/detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.03125">
+              <caret line="242" column="58" selection-start-line="242" selection-start-column="58" selection-end-line="242" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detail.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/directive/script/detail.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3515688">
+              <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/directive/less/home.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="484" column="24" selection-start-line="484" selection-start-column="24" selection-end-line="484" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/main.html" />
+        <option value="$PROJECT_DIR$/directive/html/topbar.html" />
+        <option value="$PROJECT_DIR$/directive/html/register.html" />
+        <option value="$PROJECT_DIR$/service/script/user.js" />
+        <option value="$PROJECT_DIR$/directive/script/cashierdesk.js" />
+        <option value="$PROJECT_DIR$/directive/script/shopcart.js" />
+        <option value="$PROJECT_DIR$/directive/html/shopcart.html" />
+        <option value="$PROJECT_DIR$/directive/less/shopcart.less" />
+        <option value="$PROJECT_DIR$/directive/script/batchsearch.js" />
+        <option value="$PROJECT_DIR$/directive/script/batchsearchbtn.js" />
+        <option value="$PROJECT_DIR$/directive/script/datacenter.js" />
+        <option value="$PROJECT_DIR$/directive/script/applyservice.js" />
+        <option value="$PROJECT_DIR$/directive/script/categorydata.js" />
+        <option value="$PROJECT_DIR$/directive/script/detail.js" />
+        <option value="$PROJECT_DIR$/directive/script/goodslist.js" />
+        <option value="$PROJECT_DIR$/directive/script/headbar.js" />
+        <option value="$PROJECT_DIR$/directive/script/login.js" />
+        <option value="$PROJECT_DIR$/directive/script/myorders.js" />
+        <option value="$PROJECT_DIR$/directive/script/productdetail.js" />
+        <option value="$PROJECT_DIR$/directive/script/register.js" />
+        <option value="$PROJECT_DIR$/directive/script/select.js" />
+        <option value="$PROJECT_DIR$/directive/script/verify.js" />
+        <option value="$PROJECT_DIR$/directive/script/verifydetail.js" />
+        <option value="$PROJECT_DIR$/script/main.js" />
+        <option value="$PROJECT_DIR$/script/route.js" />
+        <option value="$PROJECT_DIR$/directive/dist/directive-bundle.js" />
+        <option value="$PROJECT_DIR$/directive/script/topbar.js" />
+        <option value="$PROJECT_DIR$/view/customservicepage.html" />
+        <option value="$PROJECT_DIR$/view/goodsdatapage.html" />
+        <option value="$PROJECT_DIR$/directive/less/login.less" />
+        <option value="$PROJECT_DIR$/directive/less/productdetail.less" />
+        <option value="$PROJECT_DIR$/directive/html/headbar.html" />
+        <option value="$PROJECT_DIR$/directive/html/about.html" />
+        <option value="$PROJECT_DIR$/directive/html/home.html" />
+        <option value="$PROJECT_DIR$/directive/less/home.less" />
+        <option value="$PROJECT_DIR$/directive/html/customservice.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true">
+    <gruntfile path="$PROJECT_DIR$/gruntfile.js" />
+  </component>
+  <component name="JsBuildToolPackageJson" detection-done="true">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1197" />
+    <option name="width" value="1364" />
+    <option name="height" value="1400" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lingmall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lingmall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lingmall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lingmall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lingmall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="script" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lingmall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lingmall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="directive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="script" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lingmall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lingmall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="directive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lingmall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lingmall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="directive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lingmall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lingmall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../lingmall_service" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Apache24\htdocs\lingmall\lingmall\lingmall\image\home" />
+      <recent name="D:\Apache24\htdocs\lingmall\lingmall\lingmall\view" />
+      <recent name="D:\Apache24\htdocs\lingmall\lingmall\lingmall\image" />
+      <recent name="D:\Apache24\htdocs\lingmall\lingmall\lingmall\directive\script" />
+      <recent name="D:\Apache24\htdocs\lingmall\lingmall\lingmall\directive\less" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="109293ad-9f14-430f-ad90-102695d48b16" name="Default" comment="" />
+      <created>1469157338782</created>
+      <option name="number" value="Default" />
+      <updated>1469157338782</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1197" y="0" width="1364" height="1400" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21898928" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/directive/html/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="99" column="23" selection-start-line="99" selection-start-column="23" selection-end-line="99" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/html/customservice.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/less/home.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="484" column="24" selection-start-line="484" selection-start-column="24" selection-end-line="484" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/html/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/less/home.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="484" column="24" selection-start-line="484" selection-start-column="24" selection-end-line="484" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/script/select.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/script/serviceentrance.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/script/settlement.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44578314">
+          <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/script/shopcart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/script/shopcartbtn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/script/sidebar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/script/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/script/topmenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/script/verify.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="131" column="23" selection-start-line="131" selection-start-column="23" selection-end-line="131" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/script/verifydetail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22409639">
+          <caret line="163" column="20" selection-start-line="163" selection-start-column="20" selection-end-line="163" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/lingmall/view/integrationpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/dist/controller-bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/script/integrationpage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/less/customservice.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/route.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27951807">
+          <caret line="172" column="54" selection-start-line="172" selection-start-column="54" selection-end-line="172" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.588755">
+          <caret line="86" column="63" selection-start-line="86" selection-start-column="63" selection-end-line="86" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.055421688">
+          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/dist/directive-bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/html/shopcart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.3125">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/script/topbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/html/goodsdata.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/script/integration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/integrationpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/customservicepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.875">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/goodsdatapage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4375">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/less/login.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3373598">
+          <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/less/productdetail.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52431476">
+          <caret line="107" column="41" selection-start-line="107" selection-start-column="41" selection-end-line="107" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/html/topmenu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03297609">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/html/topbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2135202">
+          <caret line="64" column="2" selection-start-line="64" selection-start-column="2" selection-end-line="64" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/script/img.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4064257">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/script/mygoods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44578314">
+          <caret line="96" column="34" selection-start-line="96" selection-start-column="34" selection-end-line="96" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/html/mygoods.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39323992">
+          <caret line="136" column="53" selection-start-line="136" selection-start-column="49" selection-end-line="136" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/html/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.125">
+          <caret line="64" column="45" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/html/headbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32287365">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/home/ghjhj.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/home/hezuo-02.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/home/ghjhj-20.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/less/home.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="484" column="24" selection-start-line="484" selection-start-column="24" selection-end-line="484" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/html/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="99" column="23" selection-start-line="99" selection-start-column="23" selection-end-line="99" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/html/customservice.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.375">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/html/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.03125">
+          <caret line="242" column="58" selection-start-line="242" selection-start-column="58" selection-end-line="242" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/directive/script/detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3515688">
+          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

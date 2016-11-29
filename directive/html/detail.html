@@ -1,0 +1,149 @@
+<div class="detail" lmconfirmlogin lmchecker>
+	<div class="detail-title" ng-show="detailType!='goodsinfo'">
+		<div class="title">
+			<div class="goods-name">{{data.name}}</div>
+			<!-- <div class="addgoods-box" ng-show="detailType=='goodsinfo'">
+				<div class="money">
+					<span>应付金额：¥10.00</span>
+					<span class="prompt">（温馨提示：如果图片数据未能满足需求，可点击右上角申请定制服务！）</span>
+				</div>
+				<div class="addgoods-btn" ng-show="detailType=='goodsinfo'&&exists!=5" ng-click="addGoods()">加入购物车</div>
+				<div class="afteradd-btn" ng-show="detailType=='goodsinfo'&&exists==5">已加入</div>
+			</div> -->
+			<div class="verify-box" ng-show="detailType=='verifydetail'">
+				<div class="rejected" ng-click="rejected(serviceNumber)">
+					<div class="verify-icon">×</div>
+				驳回
+				</div>
+				<div class="through" ng-click="through(serviceNumber)" ng-show="afterThrough==false">
+				<div class="verify-icon">√</div>
+				通过</div>
+				<div class="after-through through" ng-show="afterThrough==true">
+				<div class="verify-icon">√</div>
+				已通过</div>
+			</div>
+			<div class="down-box" ng-show="detailType!='goodsinfo'&&detailType!='verifydetail'">
+				<div class="down" ng-click="down()">立即下载</div>
+			</div>
+		</div>
+	</div>
+	<div class="detail-content">
+		<div class="detail-left bigImg">
+			<img ng-src="{{bigimg}}">
+			<div class="mask-layer" ng-show="isShoworiginimg"></div>
+			<div class="move-area" ng-mouseover="showOriginImg($event)" ng-mouseout="isShoworiginimg=false" ng-mousemove="hoverOriginImg($event)"></div>
+		</div>
+		<div class="detail-right">
+			<div class="right-title" ng-show="detailType!='goodsinfo'">(共{{data.pictureNum}}张图片)</div>
+			<div class="right-content">
+				<dl>
+					<dd>
+						<div class="list-title">主图  
+						<span ng-show="detailType=='goodsinfo'">标准图组:{{pics_main[0].price}}元/张</span>
+						</div>
+						<ul class="img-list">
+							<div class="arrow" ng-click="setShowIndex('main',-1)" ng-show="pics_main.length>showLen">
+								<i class="iconfont">&#xe617;</i>
+							</div>
+							<li ng-repeat="d in pics_main.slice(pics_main_showindex,pics_main_showindex+showLen)">
+								<div class="checkbox checkbox-pos" ng-class="{'checkon':!!checkids[d.key]}" ng-click="check(d.key)" ng-show="detailType=='goodsinfo'"></div>
+								<img ng-src="{{d.url}}" ng-class="{'img-currBorder':d.url.indexOf(currBigimg)>=0}" ng-click="setBigimg(d.url)">
+							</li>
+							<div class="arrow" ng-click="setShowIndex('main',1)" ng-show="pics_main.length>showLen">
+								<i class="iconfont">&#xe616;</i>
+							</div>
+						</ul>
+					</dd>
+					<dd>
+						<div class="list-title">细节图</div>
+						<ul class="img-list">
+							<div class="arrow" ng-click="setShowIndex('detail',-1)" ng-show="pics_detail.length>showLen">
+								<i class="iconfont">&#xe617;</i>
+							</div>
+							<li ng-repeat="d in pics_detail.slice(pics_detail_showindex,pics_detail_showindex+showLen)">
+								<div class="checkbox checkbox-pos" ng-class="{'checkon':!!checkids[d.key]}" ng-click="check(d.key)" ng-show="detailType=='goodsinfo'"></div>
+								<img ng-src="{{d.url}}" ng-class="{'img-currBorder':d.url.indexOf(currBigimg)>=0}" ng-click="setBigimg(d.url)">
+							</li>
+							<div class="arrow" ng-click="setShowIndex('detail',1)" ng-show="pics_detail.length>showLen">
+								<i class="iconfont">&#xe616;</i>
+							</div>
+						</ul>
+					</dd>
+					<dd>
+						<div class="list-title">标签图</div>
+						<ul class="img-list">
+							<div class="arrow" ng-click="setShowIndex('tag',-1)" ng-show="pics_tag.length>showLen">
+								<i class="iconfont">&#xe617;</i>
+							</div>
+							<li ng-repeat="d in pics_tag.slice(pics_tag_showindex,pics_tag_showindex+showLen)">
+								<div class="checkbox checkbox-pos" ng-class="{'checkon':!!checkids[d.key]}" ng-click="check(d.key)" ng-show="detailType=='goodsinfo'"></div>
+								<img ng-src="{{d.url}}" ng-class="{'img-currBorder':d.url.indexOf(currBigimg)>=0}" ng-click="setBigimg(d.url)">
+							</li>
+							<div class="arrow" ng-click="setShowIndex('tag',1)" ng-show="pics_tag.length>showLen">
+								<i class="iconfont">&#xe616;</i>
+							</div>
+						</ul>
+					</dd>
+				</dl>
+				<div class="shopcart-box" ng-show="detailType=='goodsinfo'">
+					<div class="goods-name" title="{{data.name}}">{{data.name}}</div>
+					<div class="params">
+						<div class="price mar-top">价格：<span>¥ <span class="priceNum">{{totalPrice}}</span> </span></div>
+						<div class="choose-img mar-top">
+							当前选择：标准图 <span>{{standCount||0}}</span> 张 营销图： <span>{{marketCount||0}}</span>张
+						</div>
+					</div>
+					<div class="addShopcart-btn mar-top" ng-click="addGoods()">加入购物车</div>
+				</div>
+			</div>
+			<div class="origin-img" ng-init="isShoworiginimg=false" ng-show="isShoworiginimg"></div>
+		</div>
+	</div>
+</div>
+<!--营销图  -->
+<div class="market">
+	<div class="market-content">
+		<div class="market-title">营销图组</div>
+		<ul class="market-img">
+			<li ng-repeat="d in pics_market">
+				<div class="checkbox checkbox-pos" ng-class="{'checkon':!!checkids[d.key]}" ng-click="check(d.key)" ng-show="detailType=='goodsinfo'"></div>
+				<div class="img-box">
+					<img ng-src="{{d.url}}" ng-click="setOriginalImage(d.url)">
+				</div>
+				<div class="params">
+					<div class="price">¥{{priceDict[d.key]||0}}</div>
+					<div>尺寸：{{d.imageInfo.width+'*'+d.imageInfo.height}}</div>
+				</div>
+			</li>
+		</ul>		
+	</div>
+</div>
+
+<div class="mask" ng-show="isShowMask" ng-click="close()">
+	<div class="img-box">
+		<div class="close" ng-click="close()">
+			<i class="iconfont">&#xe61b;</i>
+		</div>
+		<img id="marketImg" ng-src="{{imgUrl}}">
+	</div>
+</div>
+<!-- 加入购物车弹框 -->
+<div class="addgoods-box" ng-show="isAddSuccessed">
+	<div class="box-title">加入购物车
+		<div class="close curp" ng-click="closeBox()">
+			<i class="iconfont">&#xe61b;</i>
+		</div>
+	</div>
+	<div class="box-content">
+		<div class="add-text">
+			<div class="circle">
+				<i class="iconfont icon">&#xe629;</i>
+			</div>
+			<span>商品已成功加入购物车！</span>
+		</div>
+		<div class="btn-box">
+			<div class="continue-shop btn curp" ng-click="linkTo('/datacenterpage')">继续购物</div>
+			<div class="toshopcart btn curp" ng-click="linkTo('/shopcartpage')">去购物车结算</div>
+		</div>
+	</div>
+</div>

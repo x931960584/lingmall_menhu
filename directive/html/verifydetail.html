@@ -1,0 +1,74 @@
+<div class="detail-title">
+	<div class="title">
+		<div class="goods-name">{{data.name}}</div>
+		<div class="verify-box">
+			<div class="rejected" ng-click="rejected(serviceNumber)" ng-class="{'gray':data.status == 3 || data.status==4}">
+				<div class="verify-icon">×</div>
+				{{['','驳回','驳回','已驳回'][data.status-1]}}
+			</div>
+			<div class="through" ng-click="through(serviceNumber)"ng-class="{'gray':data.status==3||data.status==4}">
+				<div class="verify-icon">√</div>
+				{{['','通过','已通过','通过'][data.status-1]}}
+			</div>
+		</div>
+	</div>
+</div>
+<div class="detail-content">
+	<div class="detail-left bigImg">
+		<img ng-src="{{bigimg}}">
+		<div class="mask-layer" ng-show="isShoworiginimg"></div>
+		<div class="move-area" ng-mouseover="showOriginImg($event)" ng-mouseout="isShoworiginimg=false" ng-mousemove="hoverOriginImg($event)"></div>
+	</div>
+	<div class="detail-right">
+		<div class="right-title">(共{{data.pictureNum}}张图片)</div>
+		<div class="right-content">
+			<dl>
+				<dt></dt>
+				<dd>
+					<div class="list-title">主图</div>
+					<ul class="img-list">
+						<li ng-repeat="d in pics_main" ng-click="setBigimg(d)">
+							<img ng-src="{{d}}" ng-class="{'img-currBorder':d.indexOf(currBigimg)>=0}">
+						</li>
+					</ul>
+				</dd>
+				<dd>
+					<div class="list-title">细节图</div>
+					<ul class="img-list">
+						<li ng-repeat="d in pics_detail" ng-click="setBigimg(d)">
+							<img ng-src="{{d}}" ng-class="{'img-currBorder':d.indexOf(currBigimg)>=0}">
+						</li>
+					</ul>
+				</dd>
+				<dd>
+					<div class="list-title">标签图</div>
+					<ul class="img-list">
+						<li ng-repeat="d in pics_tag" ng-click="setBigimg(d)">
+							<img ng-src="{{d}}" ng-class="{'img-currBorder':d.indexOf(currBigimg)>=0}">
+						</li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
+		<div class="origin-img" ng-init="isShoworiginimg=false" ng-show="isShoworiginimg"></div>
+	</div>
+</div>
+<!-- 驳回弹框 -->
+<div class="audit-box" ng-show="rejectedBox==true">
+	<div class="audit-title">商品名称-审核
+		<div class="close" ng-click="closeRejected()">×</div>
+	</div>
+	<ul class="dismiss-reason">
+		<li>驳回原因</li>
+		<li ng-click="rejectType=1">
+			<div class="checkbox" ng-class="{'checkon':rejectType==1}"></div>
+			图模糊
+		</li>
+		<li ng-click="rejectType=2">
+			<div class="checkbox" ng-class="{'checkon':rejectType==2}"></div>
+			文案不符合
+		</li>
+	</ul>
+	<textarea class="dismiss-text" type="text" ng-model="rejectContent"></textarea>
+	<div class="dismiss-btn" ng-click="confirmRejected()">驳回</div>
+</div>

@@ -1,0 +1,174 @@
+//清除浮动
+.clearfix() {
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+    }
+    &:after {
+        clear: both;
+    }
+}
+/*.clearfix() when (@support-ie-version < 8) {
+    *zoom: 1;
+}*/
+.clearfix() {
+    *zoom: 1;
+}
+
+//隐藏文字
+.hide-text() when not (@support-ie-version < 8) {
+    white-space: nowrap;
+    text-indent: 100%;
+    overflow: hidden;
+}
+.hide-text() when (@support-ie-version < 8) {
+    .ie-hide-text();
+}
+// ie6, ie7
+.ie-hide-text() {
+    text-indent: -9999px;
+    overflow: hidden;
+    text-align: left;
+}
+// 用图片替换文字，通常用作icon的样式
+
+.img-replace(@img-url, @img-x: 0, @img-y: 0) {
+    @url: ~"@{img-url}";
+    @encoded-url: escape(@url);
+    @decoded: ~`decodeURIComponent("@{encoded-url}").replace(/['"]/g, '')`;
+    @is-url-exp: ~`/^url\([^()]+\)$/i.test("@{decoded}") ? 'true' : 'false'`;
+    .hide-text();
+    .background(@is-url-exp) when not (@is-url-exp) {
+        background: url(@decoded) no-repeat @img-x @img-y;
+    }
+    .background(@is-url-exp) when (@is-url-exp) {
+        background: @decoded no-repeat @img-x @img-y;
+    }
+    .background(@is-url-exp);
+}
+.ir(@img-url, @img-x: 0, @img-y: 0) {
+    .img-replace(@img-url, @img-x, @img-y);
+}
+//hover 下划线
+.hover-link() {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+//透明函数
+.opacity(@opacity) {
+  opacity: @opacity / 100;
+  filter: ~"alpha(opacity=@{opacity})";
+}
+// 圆角
+.round(@radius:5px){
+    border-radius:@radius;
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+}
+
+/*
+盒子阴影
+@right_left 右边阴影为正数 左边负数
+@bottom_top 下边阴影为正数 上边负数
+@box  阴影大小
+@box_color 阴影颜色
+*/
+.boxshadow(@right_left:5px,@bottom_top:5px,@box :5px,@box_color:#b6ebf7){
+    box-shadow:@arguments;
+   -moz-box-shadow:@arguments;
+   -webkit-box-shadow:@arguments;
+}
+
+/*
+文字阴影,可以指定多组阴影
+@right_left1 右边阴影为正数 左边负数
+@bottom_top1 下边阴影为正数 上边负数
+@text  阴影大小
+@text_color 阴影颜色
+*/
+.textshadow(@right_left1:5px,@bottom_top1:5px,@text :5px,@tetx_color:#b6ebf7){
+    text-shadow:@arguments;
+}
+
+// 封装cf库  请叫我长风哥哥~雪花女神农
+.cf{
+    .button(){
+        display: block;
+        border: 1px solid black;
+        background-color: grey;
+        &:hover { background-color: red }
+    }
+    .my_am_box(){
+        width:600px;
+        margin:0 auto;
+        text-align: center;
+        padding-top:100px;
+    }
+    .my_am_h2(){
+        font-size:40px;
+        color: #fff;
+        margin:10px auto 20px;
+    }
+    .my_am_p(){
+        font-size:14px;
+        color:#fff;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+    /*下三角*/
+    .my_sanjiao(){
+        border-color: transparent transparent #ffd93b;
+        border-style: dashed dashed solid;
+        border-width: 10px;
+        font-size: 0;
+        height: 0;
+        left:120px;
+        position: absolute;
+        top: -20px;
+        width: 0;
+    }
+    .my_outer_sanjiao(){
+        border-color: transparent transparent #fff;
+        border-style: dashed dashed solid;
+        border-width: 10px;
+        font-size: 0;
+        height: 0;
+        left:-9px;
+        position: absolute;
+        top:-9px;
+        width: 0;
+
+    }
+    /*左三角*/
+     .my_left_sanjiao(){
+        border-color: transparent #0a1413 transparent transparent;
+        border-style: dashed solid dashed dashed;
+        border-width: 10px;
+        font-size: 0;
+        height: 0;
+        left:-19px;
+        position: absolute;
+        top:60px;
+        width: 0;
+        text-indent: -9999px;
+
+    } 
+    .my_left_outer_sanjiao(){
+        border-color: transparent transparent transparent #333;
+        border-style: dashed dashed solid;
+        border-width: 10px;
+        font-size: 0;
+        height: 0;
+        left:-9px;
+        position: absolute;
+        top:-9px;
+        width: 0;
+    
+    }
+    
+    
+}

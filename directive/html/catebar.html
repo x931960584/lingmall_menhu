@@ -1,0 +1,12 @@
+<div class="detail-top">
+	<div class="curr-pos">当前位置：</div>
+	<div class="category-pos" ng-repeat="n in selectedData | orderBy:['value']">{{n.text}}
+		<div class="close" ng-click="unSelect(n.value)">×</div>
+	</div>
+</div>
+<div class="category-type">
+	<div class="type-text">{{title}}</div>
+	<ul class="type-detail">
+		<li ng-class="{'current':selectedData.indexOf(n)>=0}" ng-repeat="n in data" ng-click="select(n.value)">{{n.text}}</li>
+	</ul>
+</div>

@@ -1,0 +1,110 @@
+<div class="allorders">
+	<div class="leftbar">所有服务订单</div>
+	<div class="right-content">
+		<div class="content-title">
+			<div class="title-text">订购详情</div>
+			<div class="title-right fr">
+				<div class="time-text fl">交易时间：</div>
+				<div class="time-detail fl">
+					<input type="text" class="start-date" value="{{startTime|date:'yyyy-MM-dd'}}"></input>
+					<div class="split"> — </div>
+					<input type="text" class="end-date" value="{{endTime|date:'yyyy-MM-dd'}}"></input>
+				</div>
+				<div class="button-box fr">
+					<div class="search-btn btn fl"  ng-click="search()">搜索</div>
+					<div class="custom-service-btn btn fl" ng-click="linkTo('/applyservicepage')">
+						<div class="add-icon">+</div>
+						申请服务
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="thead-box">
+			<table class="batch-list table">
+				<thead class="thead">
+					<tr>
+						<td>服务号</td>
+						<td>服务类型</td>
+						<!-- <td>申请数量</td> -->
+						<td>申请时间</td>
+						<td>完成进度</td>
+						<td>联系人</td>
+						<td>服务状态</td>
+					</tr>
+				</thead>
+			</table>
+		</div>
+		<div class="table-box" ng-repeat="d in data">
+			<table class="batch-list table">
+				<tbody class="tbody">
+					<tr>
+						<td>{{d.serviceNumber}}</td>
+						<td>{{transType(d.type)}}</td>
+						<!-- <td>{{d.count}}</td> -->
+						<td>{{d.startTime}}</td>
+						<td class="progress" ng-class="{'visibility':d.status==1}" ng-click="d.status!=1 && progress(d.serviceNumber,$event)">{{d.status==1?'':'点击可查看详细进度'}}</td>
+						<td class="contact"  ng-class="{'visibility':d.status==1 || d.projectId ==''}" ng-click="d.status!=1 && d.projectId !='' && contact(d.projectId,$event)">{{d.status==1?'':'项目经理'}}</td>
+						<td >{{transStatus(d.status)}}</td>
+					</tr>
+					<tr class="textarea">
+						<td colspan="7">
+							<textarea class="service-require">服务要求： {{d.serviceDemand}}</textarea>
+						</td>					
+					</tr>
+					<tr>
+						<td colspan="7" ng-show="d.status!=1">
+							<div ng-hide="d.status==1" class="detail-btn" ng-click="detail(d)">查看详情</div>
+						</td>	
+					</tr>
+					<!--带阴影悬浮框-> 进度详情 -->
+					<div class="progress-detail" ng-show="isShowProgress" ng-style="progressStyle">
+						<div class="pro-title">进度查看
+							<div class="close" ng-click="closeProgress()">×</div>
+						</div>
+						<ul class="list-detail">
+							<!-- <li>
+								<span>已提交数量：</span>
+								<span><span class="count">{{progressData.commitNumber}}</span> 个商品</span>
+							</li> -->
+							<li>
+								<span>待审核：</span>
+								<span><span class="count">{{progressData.pre_review}}</span> 个商品</span>
+							</li>
+							<li>
+								<span>审核通过：</span>
+								<span><span class="count">{{progressData.review}}</span> 个商品</span>
+							</li>
+						</ul>
+					</div>
+					<!--悬浮框 联系方式 -->
+					<div class="progress-contact" ng-show="isShowContact" ng-style="contactStyle">
+						<div class="pro-title">联系方式
+							<div class="close" ng-click="closeContact()">×</div>
+						</div>
+						<ul class="list-detail">
+							<li>
+								<span>姓名：</span>
+								<span>项目经理</span>
+							</li>
+							<li>
+								<span>联系电话：</span>
+								<span>{{contactData.phone}}</span>
+							</li>
+							<li>
+								<span>微信：</span>
+								<span>{{contactData.weixin}}</span>
+							</li>
+							<li>
+								<span>邮箱：</span>
+								<span>{{contactData.email}}</span>
+							</li>
+						</ul>
+					</div>
+
+				</tbody>
+			</table>
+		</div>
+		<lmpager></lmpager>
+	</div>
+</div>

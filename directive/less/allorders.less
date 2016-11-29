@@ -1,0 +1,233 @@
+@import "../../less/colors.less";
+lmallorders {
+	.allorders {
+		padding-top:20px;
+		background-color:#fcfcfc;
+		min-height:890px;
+		.visibility {
+			visibility:hidden;
+			}
+		.leftbar {
+			float:left;
+			width:200px;
+			height:50px;
+			line-height: 50px;
+			text-align: center;
+			border:1px solid @main-color-border;
+			border-radius:3px;
+			background-color:#fff;
+			margin-left:40px;
+			font-size:16px;
+		}
+		.right-content {
+			padding:0 50px;
+			min-width:860px;
+			.content-title {
+				width:100%;
+				height:50px;
+				line-height: 50px;
+				border-bottom:1px solid @main-color-border;
+				margin-bottom:10px;
+				padding-left:10px;
+				background-color:#fff;
+				.title-text {
+					float:left;
+					font-size: 16px;
+					width:100px;
+					height:20px;
+					line-height: 20px;
+					padding-left:5px;
+					margin-top:15px;
+					border-left:2px solid @main-color-current;
+				}
+				.title-right,.title-right span{
+					height:50px;
+					line-height: 50px;
+					vertical-align: middle;
+				}
+				.fl {
+					float:left;
+				}
+				.fr {
+					float: right;
+				}
+				.title-right{
+					padding-top:5px;
+					.time-text {
+						height:40px;
+						line-height: 40px;
+						display: inline-block;
+					}
+					.time-detail {
+						margin-bottom:5px;
+						display:inline-block;
+						.start-date,.end-date {
+							float:left;
+							width:100px;
+							height:36px;
+							border:1px solid @main-color-border;
+							border-radius:3px;
+							cursor: pointer;
+							display:inline-block;
+							text-align: center;
+							letter-spacing: 1px;
+						}
+						.split {
+							float:left;
+							width:30px;
+							line-height: 40px;
+							text-align: center;
+						}
+					}
+					.button-box{
+						margin-left:10px;
+					}
+					.btn {
+						height:40px;
+						line-height: 40px;
+						text-align: center;
+						border-radius:3px;
+						display:inline-block;
+						margin-bottom:6px;
+						cursor: pointer;
+					}
+					.search-btn {
+						width:100px;
+						background-color: @main-color-current;
+					}
+					.custom-service-btn {
+						width:120px;
+						border:1px solid @main-color-border;
+						padding-left:15px;
+						position: relative;
+						margin:0 10px 6px 10px;
+					}
+					.add-icon {
+						width:20px;
+						height:20px;
+						line-height: 17px;
+						border-radius: 10px;
+						border:1px solid @main-color-border;
+						display:inline-block;
+						position: absolute;
+						top:10px;
+						left:10px;
+					}
+				}
+			}
+			.table {
+				width:100%;
+			}
+			.table-box {
+				padding:0 20px;
+				background-color:#fff;
+				border-top:1px solid #ececec;
+				z-index:1;
+				margin-bottom:20px;
+			}
+			.thead-box{
+				padding:0 20px;
+				background-color:#f2f2f2;
+				margin-bottom:10px;
+			}
+			.batch-list {
+				font-size:14px;
+				.thead {
+					/*background-color:#f2f2f2;*/
+				}
+				tr {
+					height:50px;
+					line-height: 50px;
+					text-align: left;
+					td {
+						width:14%;
+						/*min-width:120px;*/
+					}
+				}
+				.textarea {
+					height:30px;
+					line-height: 30px
+				}
+				.tbody {
+					font-size:12px;
+					.progress,.contact {
+						color:@main-color-blue;
+						cursor: pointer;
+					}
+				}
+			}
+			.detail-btn {
+				float:right;
+				width:98px;
+				height:38px;
+				line-height: 38px;
+				text-align: center;
+				border:1px solid @main-color-current;
+				border-radius:3px;
+				color:@main-color-current;
+				cursor: pointer;
+				margin-top:10px;
+			}
+			textarea {
+				border:none;
+			}
+			.service-require {
+				width:100%;
+				height:30px;
+				line-height: 30px;
+				border-top:1px solid #ececec;
+				border-bottom:1px solid @main-color-border;
+				outline: none;
+				margin-top:10px;
+				text-align: left;
+			}
+
+			/*悬浮框样式*/
+			.progress-detail,.progress-contact {
+				border:1px solid @main-color-border;
+				box-shadow: 0 0 10px #888;
+				padding-bottom:20px;
+				background-color:#fff;
+				position: absolute;
+				top:35px;
+				right:50px;
+				z-index:2;
+				.pro-title {
+					font-size: 16px;
+					height:40px;
+					line-height: 40px;
+					text-align: left;
+					padding-left:10px;
+					border-bottom: 1px solid @main-color-border;
+					.close {
+						float:right;
+						font-size:38px;
+						margin-right:10px;
+						cursor: pointer;
+					}
+				}
+				.list-detail {
+					font-size: 12px;
+					margin-top:10px;
+					text-align: center;
+					padding:0 50px;
+					li {
+						height:24px;
+						line-height: 24px;
+						text-align: left;
+					}
+					.count {
+						color:red;
+					}
+				}
+			}
+
+			.progress-detail{
+				width: 250px;
+			}
+			.progress-contact{
+				width: 300px;
+			}
+		}
+	}
+}

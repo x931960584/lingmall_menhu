@@ -1,0 +1,47 @@
+<div class="wrap">
+	<div class="location ma">当前位置：首页&nbsp;>&nbsp;关键词搜索&nbsp;>&nbsp;"<span>{{locationName}}</span>"</div>
+	<div class="container">
+		<!-- <div class="board">
+			<dl>
+				<dt style="display:none;">
+					<div class="title fl">所有分类</div>
+					<div class="category fl">
+						<ul>
+							<li ng-class="{'selected':categorySelectedArr.indexOf(d.id)>=0}" ng-repeat="d in categoryData" ng-click="toggleCategory(d.id)">{{d.type}}<a>×</a></li>
+						</ul>
+					</div>
+					<div class="more fr curp">
+					<a ng-show="!showmore" ng-click="showmore=1">更多&nbsp;<i class="iconfont">&#xe614;</i></a>
+					<a ng-show="showmore" ng-click="showmore=0">收起&nbsp;<i class="iconfont">&#xe63c;</i></a>
+					</div>
+				</dt>
+				<dd>
+					<div class="checkrect fl" ng-click="select('all',$event)">
+						<div class="checkbox" ng-class="{'checkon':isCheckAll}"></div>
+						<div class="checkname">全选</div>
+					</div>
+					<div class="add_btn curp fr" ng-click="batchAddMygood()">加入商品库</div>
+				</dd>
+			</dl>
+		</div> -->
+		<div class="goodsrect">
+			<ul id="list">
+				<li ng-repeat="d in data track by $index">
+					<dl>
+						<dt>
+							<div class="checkrect imgcheckbox">
+								<!-- <div class="checkbox" style="visibility:{{d.exists==1?'visible':'hidden'}}" ng-class="{'checkon':(checkids.indexOf(d.id)>=0)}" ng-click="select(d.id,$event)"></div> -->
+							</div>
+							<img ng-click="linkToDetail(d.goodsId)" ng-src="{{d.pic}}" />
+						</dt>
+						<dd>
+							<div class="goodname">{{d.name}}</div>
+						</dd>
+					</dl>
+				</li>
+			</ul>
+		</div>	
+		<lmpager></lmpager>
+	</div>
+</div>
+

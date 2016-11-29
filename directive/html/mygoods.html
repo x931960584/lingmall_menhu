@@ -1,0 +1,81 @@
+<div class="right-content" lmchecker lmconfirmlogin>
+	<div class="content-title">
+		<div class="title-text">我的商品库</div>
+	</div>
+	<table class="goods-detail table">
+		<tr><!-- 
+			<td>
+				<span>商品类型：</span>
+				<div class="select">全部
+					<i class="iconfont xiala">&#xe612;</i>
+				</div>
+			</td> -->
+			<td>
+				<span class="input-box">
+					<span>条形码：</span>
+					<input class="barcode-input" ng-model="barcode" type="text"/>			
+				</span>
+				<span class="input-box">
+					<span>商品名称：</span>
+					<input class="barcode-input" ng-model="keyword" type="text"/>
+				</span>
+				<div class="button-box">
+					<div class="btn search-btn">
+						<i class="iconfont search-icon">&#xe611;</i>
+						<span class="search-text" ng-click="search()">搜索</span>
+					</div>
+					<div class="btn batch-search-btn">条码搜索</div>
+					<input lmbatchsearchbtn class="csvUploader btn" name="csv" type="file"> 
+				</div>
+			</td>
+			<td>
+				<div class="btn-box">
+					<a href="./sample/sample.csv" target="_blank">Excel样例</a>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<div class="choose-all">
+		<div class="checkbox" ng-class="{'checkon':isAllChecked}" ng-click="checkAll()"></div>
+		<div class="choose-all-text">全选</div>
+		<div class="down-choose" ng-click="downChoose()">下载所选</div>
+		<div class="pager">
+			<span class="goods-total">{{totalCount}}件商品数据</span>
+			<lmminpager></lmminpager>
+		</div>
+	</div>
+	<table class="goods-list table">
+		<thead class="thead">
+			<tr>
+				<td>条形码</td>
+				<td>商品名称</td>
+				<td>标准图数量</td>
+				<td>营销图数量</td>
+				<td>操作</td>
+			</tr>
+		</thead>
+		<tbody class="tbody">
+			<tr ng-repeat="d in data">
+				<td>
+					<div>
+						<span class="checkbox checkbox-table" ng-class="{'checkon':!!checkids[d.sku_id]}" ng-click="check(d.sku_id)"></span>
+						<span class="barcode">{{d.barcode}}</span>
+					</div>
+				</td>
+				<td>{{d.name}}</td>
+				<td>{{d.pictureNum}}</td>
+				<td>{{d.detailPageNum}}</td>
+				<td>
+					<span class="down" ng-click="down(d.sku_id)">下载</span>
+					<span class="split">|</span>
+					<span class="detail">
+						<a  ng-href="#/detailpage/{{d.sku_id}}" target="_blank">详情</a>
+					</span>
+				</td>
+			</tr>
+		</tbody>	
+	</table>
+	
+</div>
+<lmpager></lmpager>
+

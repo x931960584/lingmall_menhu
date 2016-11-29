@@ -1,0 +1,77 @@
+<div class="batchsearch" lmchecker>
+	<div class="goods-content">
+		<div class="content-title">
+			<div class="title-text" ng-click="goback()">向上一级</div>
+		</div>
+		<div class="table-box">
+			<table class="table content-center">
+				<tr>
+					<td></td>
+					<td colspan="2" class="btn-box">
+						<div class="add-box">
+							<input type="text" ng-model="barcode">
+							<div class="add-btn" ng-click="search()">添加</div>
+						</div>
+						<div class="import-btn">导入Excel</div>
+						<input lmbatchsearchbtn class="csvUploader" name="csv" type="file"> 
+
+					</td>
+					<td>
+						<lmshopcartbtn></lmshopcartbtn>
+					</td>
+				</tr>
+			</table>			
+		</div>
+		<ul class="match-box">
+			<li ng-class="{'current':type=='found'}">
+				<i class="arrow-down" ng-show="type=='found'"></i>
+				<a href="javascript:" ng-click="changeType('found')">匹配到商品{{foundData.length||0}}SKU</a>
+			</li>
+			<li ng-class="{'current':type=='notfound'}">
+				<i class="arrow-down" ng-show="type=='notfound'"></i>
+				<a href="javascript:" ng-click="changeType('notfound')">未匹配到的商品{{notfoundData.length||0}}SKU</a>
+			</li>
+		</ul>
+		<table class="table">
+			<thead class="thead">
+				<tr>
+					<td class="padd-left">条形码</td>
+					<td>商品名称</td>
+					<td>商品图片</td>
+					<td>操作</td>
+				</tr>
+			</thead>
+			<tbody class="tbody">
+				<tr ng-repeat="d in subData">
+					<td  class="barcode">
+						<!-- <div class="checkbox" ng-class="{'checkon':checkids[d.barcode]}" ng-click="check(d.barcode)"></div> -->
+						{{d.barcode}}
+					</td>
+					<td>{{d.name}}</td>
+					<td>{{d.pictureNum||0}}</td>
+					<td class="detail">
+						<a target="_blank" ng-href="#/detailpage/{{d.goodsId}}/goodsinfo" ng-show="d.goodsId!=''">
+							详情
+						</a>
+					</td>
+				</tr>
+				<tr class="seemore">
+					<td colspan="4" ng-click="more()">点击加载更多......</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="settlement table" style="display:none;">
+			<tr>
+				<td class="choose-all">
+					<div class="checkbox checkbox-pos" ng-class="{'checkon':isAllChecked}" ng-click="checkAll()"></div>
+					全选
+					<span class="del-choose" ng-click="remove()">删除所选商品</span>
+				</td>
+				<td class="go-settlement">
+					<span class="total-count">共{{totalCount||0}}SKU</span>
+					<span class="settlement-btn" ng-click="confirm()">去结算</span>
+				</td>				
+			</tr>
+		</table>
+	</div>
+</div>

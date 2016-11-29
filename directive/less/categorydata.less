@@ -1,0 +1,244 @@
+@import "../../less/colors";
+lmcategorydata {
+	.wrap {
+		width: 100%;
+		height:100%;
+		background-color: @main-color-body;
+		.container{	
+			width:1200px;
+			margin:0 auto;
+			.all-category {
+				font-family: "宋体";
+				font-size: 12px;
+				width:1198px;
+				height:45px;
+				line-height: 45px;
+				border:1px solid @main-color-border;
+				margin-top:20px;
+				background-color:#fff;
+				overflow-y:hidden;
+				.category {
+					float:left;
+					width:180px;
+					color:#666;
+					background-color:#f3f3f3;
+					text-align: center;
+				}
+				dd {
+					float: left;
+					margin-right: 55px;
+					color:#333;
+					cursor: pointer;
+				}
+				dd:hover {
+					color:@main-color-hover;
+				}
+				.current {
+					color:@main-color-hover;
+				}
+				span {
+					/*float:right;*/
+					margin-left:100px;
+					cursor: pointer;
+				}
+				.category-more {
+					float:right;
+					width:1020px;
+					border:1px solid @main-color-border;
+					border-top:none;
+					position:absolute;
+					margin:45px 0 0 179px;
+					background-color: #fff;
+					.more-list {
+						height:100%;
+						li {
+							float:left;
+							margin-right:55px ;
+						}
+						li:hover {
+							color:@main-color-hover;
+						}
+					}
+				}
+				.mar-left42 {
+					margin-left:42px;
+				}
+				.search-current {
+					color:@main-color-hover;
+				}
+			}
+			.moreHeight{
+				height:auto!important;
+			}
+			.sidebar {
+				float:left;
+				width:178px;
+				border:1px solid @main-color-border;
+				background-color:#fff;
+				margin-top:10px;
+				.sidebar-title {
+					font-family: "宋体";
+					font-size: 14px;
+					font-weight: bold;
+					color:#333;
+					padding:15px 0 15px 20px;
+				}
+				.sidebar-current {
+					background-color:@main-color;
+					color:#000;
+				}
+				dd {
+					height:30px;
+					line-height: 30px;
+					text-align: left;
+					font-size: 14px;
+					cursor: pointer;
+					padding-left:48px;
+					color:@main-color-text;
+				}
+			}
+			.right-content {
+				float:left;
+				width:990px;
+				margin-left:30px;
+				font-family: "宋体";
+				font-size: 12px;
+				.checkbox {
+					float:left;
+					width:14px;
+					height:14px;
+					background-image:url(../image/common/checkbox.png);
+					margin:15px 10px 0 0;
+					cursor: pointer;
+				}
+				.checkon {
+					background-position: 0px -14px;
+				}
+				.checkbox-pos {
+					position:absolute;
+					margin-left: 10px;
+				}
+				.filter-result {
+					margin:20px 0 10px 0;
+					color:#666;
+					.total-count {
+						color:red;
+					}
+					.filter-text {
+						padding-left:10px;
+					}
+				}
+				.filter-box {
+					width:988px;
+					height:45px;
+					border:1px solid @main-color-border;
+					background-color:#fff;
+					margin-bottom:10px;
+					.result-text {
+						border-bottom:1px solid @main-color-border;
+						height:45px;
+						line-height: 45px;
+						padding-left:15px;
+						.page-min {
+							float:right;
+							margin-right:20px;
+							display:inline-block;
+							cursor: pointer;
+							.currpage {
+								color:red;
+							}
+						}
+					}
+					.choose-all {
+						height:45px;
+						line-height: 45px;
+						padding-left:15px;
+						background-color:#f8f8f8;
+						
+						.add-goods-btn,.addgoods-btn {
+							float:right;
+							width:80px;
+							height:28px;
+							line-height: 28px;
+							color:@main-color-text;
+							border-radius: 3px;
+							text-align: center;
+							margin:8px 25px 0 0 ;
+							cursor: pointer;
+						}
+						.add-goods-btn {
+							background-color: @main-color;
+						}
+						.addgoods-btn {
+							background-color: @main-color-button;
+						}
+						.addgoods-btn:hover {
+							background-color: @main-color-button-hover;
+						}
+					}
+				}
+				.category-list {
+					margin-right:-10px;
+					.category-detail {
+						float:left;
+						width:238px;
+						height:290px;
+						border:1px solid @main-color-border;
+						margin:0 12px 20px 0;
+						.category-img {
+							height:240px;
+							cursor: pointer;
+							img {
+								width: 236px;
+								height:240px;
+								border: none;
+								background-color:#fafafa;
+							}
+						}
+						.category-text {
+							height:50px;
+							line-height: 50px;
+							background-color:#fff;
+							.cate-text ,.cate-data{
+								/*padding-left:10px; */
+								text-align: left;
+							}
+							.cate-text{
+								float: left;
+								color:#888;
+							}
+							.cate-data {
+								color:#666;
+								text-align: center;
+							}
+							.cate-name {
+								/*margin-top:10px;*/
+								overflow: hidden;
+								text-overflow: ellipsis;
+								white-space: nowrap;
+								padding:0 5px;	
+								cursor: default;
+							}
+							.name-text {
+								margin-top:6px;
+							}
+						}
+						
+					}
+					.category-detail:hover {
+						border:2px solid @main-color;
+					}
+				}	
+			}
+			
+		}
+	}
+	lmpopuplogin{
+		z-index: 100;
+		left: 0%;
+		top: 0%;
+		>*{
+			position: relative;
+		}
+	}
+}

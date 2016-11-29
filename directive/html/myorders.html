@@ -1,0 +1,41 @@
+<div class="myorders" lmconfirmlogin>
+	<div class="leftbar">全部订单</div>
+	<div class="right-content">
+		<div class="content-title">
+			<div class="title-text">我的订单</div>
+		</div>
+		<div class="all-orders">
+			<div class="orders-title">全部订单</div>
+			<div class="orders-num">
+				订单编号：
+				<input type="text" ng-model="orderNo"/>
+				<div class="search-btn" ng-click="getOrders()">搜索</div>
+			</div>		
+		</div>
+		<table class="table orders-table">
+			<thead class="thead">
+				<tr>
+					<td class="padd-left">订单号</td>
+					<td>商品数据</td>
+					<td>下单时间</td>
+					<td>订单金额</td>
+					<td>订单状态</td>
+					<td>操作</td>
+				</tr>
+			</thead>
+			<tbody class="tbody">
+				<tr ng-repeat="d in orderData">
+					<td class="padd-left">{{d.orderNo}}</td>
+					<td>{{d.orderContent}}</td>
+					<td>{{d.order_time.split(' ')[0]}}</td>
+					<td>{{d.money | currency : '￥' : 2}}</td>
+					<td>{{statusDict[d.pay_status]}}</td>
+					<td class="detail pay" >
+						<a ng-show="d.pay_status==0 || d.pay_status == 2" target="_blank" ng-href="#/cashierdeskpage/{{d.orderNo}}">支付</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<lmpager></lmpager>
+	</div>
+</div>

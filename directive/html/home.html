@@ -1,0 +1,192 @@
+<div class="container">
+	<!--<div class="line0">
+		<div class="logTop">
+		</div>
+		<div class="timeTop"></div>
+		<div class="bigFont"></div>
+		<div class="bigFont1"></div>
+		<div class="phoneTop"></div>
+		<div class="code">
+			<div class="code_img"></div>
+			<div class="code_font">零猫皇冠会员群</div>
+		</div>
+	</div>'bg0': t0,'bg1': t1,'bg2': t2-->
+	<div class="line" style="background:url({{imgUrl}}) no-repeat center;background-size:cover;">
+		<div class="line-cen">
+			<div class="line_regist">
+				<div class="line_big">免费注册零猫会员</div>
+				<div class="line_red">10万SKU高质量商品图片免费拿</div>
+				<div class="form_line">
+					<div class="line_phone">
+						<span><i>*</i>手机号码</span>
+						<input type="text" ng-model="mobile" ng-blur="mobilefn(mobile)" ng-class="{mobile_active:isMobile}"/>
+					</div>
+					<div class="line_duanxin">
+						<span><i>*</i>短信验证码</span>
+						<em>
+							<input type="text" ng-model="vercode"/>
+							<button ng-class="{'btnwait':second>0}" ng-click="getvercode()">{{vercodebtntext}}</button>
+						</em>
+					</div>
+					<div class="line_phone">
+						<span><i>*</i>请设置密码</span>
+						<input type="password" ng-model="pw" ng-blur="pwfn(pw)" ng-class="{pw_active:isPw}"/>
+					</div>
+					<div class="line_phone">
+						<span><i>*</i>请确认密码</span>
+						<input type="password" ng-model="pwrepeat" ng-blur="pwrepeatfn(pwrepeat)" ng-class="{pwrepeat_active:isPwrepeat}"/>
+					</div>
+					<div class="line_phone">
+						<span><i>*</i>网店地址</span>
+						<input type="text" ng-model="url" ng-blur="urlfn(url)" ng-class="{url_active:isUrl}"/>
+					</div>
+					<!--
+					<div class="line_phone">
+						<span>邀请码</span>
+						<input type="text" ng-model="code"/>
+					</div>
+					-->
+				</div>
+				<div class="line_xieyi">
+					<input type="checkbox" ng-click="isChecked=!isChecked"/>
+					<span>我已阅读，并同意<a class="curp agreement" href="#/aboutpage/useragreement" target="_blank">《零猫用户协议》</a></span>
+				</div>
+				<div class="line_bot">
+					<button class="line_btn" ng-click="reg()">立即注册</button>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="line1 ma">
+		<div class="box">
+			<div class="pro_biao">
+				<i class="iconfont">&#xe618;</i>
+				<span>图片超市</span>
+			</div>
+			<div class="left">
+				<div class="centitle">高清大图/无水印</div>
+				<div class="bigtitle">商品数据服务平台</div>
+				<div class="smalltitle">10万高质量零售商品图库（图片、条码、基础参数）实时调取</div>
+				<div class="searchBox">
+					<input type="text" maxlength="32" placeholder="请输入条形码、商品名称" ng-model="keyword" ng-keydown="keydown($event,'keyword')"/>
+					<div ng-click="linkTo('/goodslistpage')" class="searchBtn">
+						<i class="iconfont">&#xe611;</i>
+					</div>
+				</div>
+				<div class="goods-type">
+					<div class="bingobox fl">快消品</div>
+					<div class="bingobox fl">进口商品</div>
+					<div class="bingobox">生鲜类</div>
+				</div>
+			</div>
+			<div class="right"></div>
+		</div>
+	</div>
+	<div class="line2">
+		<div class="box ma">
+			<div class="title"><i class="iconfont">&#xe621;</i><span>定制服务</span></div>
+			<div class="line2-jie">图片采集、详情页设计、参数信息录入，零猫用最流程化和有序化的方式实现商品数据的采集，做到专业化项目实施。</div>
+			<div class="line2-cen">
+				<div class="line2-cen-left"></div>
+				<div class="line2-cen-right">
+					<div class="line2-pro"><i class="line2-pro-i"></i><span>商品数据采集</span></div>
+					<div class="line2-detail"><i class="line2-detail-i"></i><span>详情页设计</span></div>
+					<div class="line2-xin"><i class="line2-xin-i"></i><span>参数信息录入</span></div>
+				</div>
+			</div>
+			
+
+
+
+	<!--
+			<div class="items line2-1 fl">
+				<div class="subtitle">商品数据采集</div>
+				<div class="describe">一次拍摄，无限使用，不再为商品上架发愁</div>
+			</div>
+			<div class="items line2-2 fl">
+				<div class="subtitle">个性化营销制作</div>
+				<div class="describe">完善图片商品属性，展示强大视觉效果，让商品营销更具优势</div>
+			</div>
+			<div class="items line2-3">
+				<div class="subtitle">API快速对接</div>
+				<div class="describe">高质量商品数据通过API接口直接获取</div>
+			</div>-->
+			<div class="more_btn ma curp" ng-click="linkTo('/customservicepage',true)">了解更多</div>
+		</div>
+	</div>
+	<div class="line3 ma">
+		<div class="title"><i class="iconfont">&#xe622;</i><span>数据应用</span></div>
+		<div class="line3-cen">
+			<div class="line3-cen-lef">
+				<div class="line3-big">商品数据管理</div>
+				<div class="line3-small">权限管理、多格式管理、参数更新、包装更新，零猫用结构
+存储和智能检索为您在云端构建一个私有商品库。</div>
+			</div>
+			<div class="line3-cen-righ"></div>
+		</div>
+		<!--<div class="items line3-1 fl fix_mr50">
+			<div class="subtitle">商品数据采集</div>
+			<div class="describe">一次拍摄，无限使用，不再为商品上架发愁</div>
+		</div>
+		<div class="items line3-2 fl fix_mr50">
+			<div class="subtitle">标准商品数据</div>
+			<div class="describe">电商服务标准输出确保商品属性精准</div>
+		</div>
+		<div class="items line3-3 fl fix_mr50">
+			<div class="subtitle">一站式服务</div>
+			<div class="describe">商品数据交易数字、个性、智能</div>
+		</div>
+		<div class="items line3-4 fl">
+			<div class="subtitle">多年行业领导</div>
+			<div class="describe">多年企业服务平台直击业务需求痛点</div>
+		</div>-->
+	</div>
+	<div class="line4">
+		<div class="box ma">
+			<div class="title"><i class="iconfont">&#xe620;</i><span>合作伙伴</span></div>
+			<div class="line4-cen">
+				<span class="line4-cen1"></span>
+				<span class="line4-cen2"></span>
+				<span class="line4-cen3"></span>
+				<span class="line4-cen4"></span>
+				<span class="line4-cen5"></span>
+				<span class="line4-cen6"></span>
+				<span class="line4-cen7"></span>
+				<span class="line4-cen8"></span>
+				<span class="line4-cen9"></span>
+				<span class="line4-cen10"></span>
+				<span class="line4-cen11"></span>
+				<span class="line4-cen12"></span>
+				<span class="line4-cen13"></span>
+				<span class="line4-cen14"></span>
+				<span class="line4-cen15"></span>
+				<span class="line4-cen16"></span>
+				<span class="line4-cen17"></span>
+				<span class="line4-cen18"></span>
+				<span class="line4-cen19"></span>
+				<span class="line4-cen20"></span>
+				<span class=""></span>
+				<span class="line4-cen21"></span>
+				<span class="line4-cen22"></span>
+				<span class=""></span>
+			</div>
+
+
+
+			<!--
+			<div class="logos">
+				<div class="logo line4-1 fl"><img src="../image/home/line4-1-1.png"></div>
+				<div class="logo line4-2 fl"><img src="../image/home/line4-2-1.png"></div>
+				<div class="logo line4-3 fl"><img src="../image/home/line4-3-1.png"></div>
+				<div class="logo line4-4 fl"><img src="../image/home/line4-4-1.png"></div>
+				<div class="logo line4-5 fl"><img src="../image/home/line4-5-1.png"></div>
+			</div>-->
+		</div>
+	</div>
+	<div class="line5">
+		<div class="serveforbusiness">为传统零售行业电商化问题提供专业解决方案!</div>
+		<div class="regist_btn ma curp">
+			<a href="http://192.168.1.240:8002/register" target="_self">立即加入</a></div>
+	</div>
+</div>

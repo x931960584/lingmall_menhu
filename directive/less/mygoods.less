@@ -1,0 +1,200 @@
+@import "../../less/colors.less";
+lmmygoods {
+	.right-content {
+		background-color:#fff;
+		padding:0 50px;
+		margin-top:10px;
+		.content-title {
+			width:100%;
+			height:50px;
+			line-height: 50px;
+			text-align: center;
+			background-color:@main-color-background;
+			.title-text {
+				width:120px;
+				background-color:@main-color-current;
+			}
+		}
+		.table {
+		}
+		.goods-detail {
+			width:100%;
+			font-size:14px;
+			tr {
+				width:100%;
+				height:50px;
+				line-height: 50px;
+				td {
+					span {
+						float:left;
+					}
+					.select {
+						width:100px;
+						height:30px;
+						line-height: 30px;
+						border:1px solid #eff1f6;
+						padding-left:10px;
+						margin-top:10px;
+						border-radius:3px;
+						cursor: pointer;
+						.xiala {
+							float: right;
+							margin-right:5px;
+							color:#999;
+							cursor: pointer;
+							font-size: 30px;
+							margin-top:-2px;
+						}
+					}
+					.barcode-input {
+						width:168px;
+						height:30px;
+						line-height: 30px;
+						padding-left:10px;
+						border:1px solid @main-color-border;
+						outline: none;
+						border-radius:3px;
+					}
+					.input-box {
+						display:inline-block;
+						margin-right:10px;
+					}
+					.button-box{
+						height:30px;
+						display:inline-block;
+						margin-top:12px;
+					}
+					.btn {
+						float:left;
+						width:80px;
+						height:30px;
+						line-height: 30px;
+						text-align: center;
+						border-radius: 3px;
+						cursor: pointer;
+						display: inline-block;
+					}
+					.search-btn {
+						background-color:@main-color-current;
+						.search-icon {
+							float:left;
+							font-size:26px;
+							margin-left:10px;
+						}
+					}
+					.batch-search-btn {
+						background-color:@main-color-blue;
+						color:#fff;
+						margin-left:20px;
+					}
+					input.csvUploader{
+						margin-left:-80px;
+						margin-bottom:22px;
+						width:80px;
+						height:30px;
+						opacity:0;
+						cursor: pointer;
+					}
+					.btn-box {
+						display: inline-block;
+						margin-bottom:-10px;
+						a {
+							font-size: 12px;
+							color:@main-color-blue;
+							border-bottom:1px solid @main-color-blue;
+							margin-left:10px;
+						}
+					}
+				}
+			}
+		}
+		.checkbox {
+			float:left;
+			width:14px;
+			height:14px;
+			background:url("../../image/common/checkbox.png");
+			display:inline-block;
+			margin: 14px 10px 0 10px;
+			cursor: pointer;
+		}
+		.checkon {
+			background-position: 0px -14px;
+		}
+		.choose-all {
+			width:100%;
+			height:40px;
+			line-height: 40px;
+			background-color:@main-color-background;
+			.choose-all-text {
+				width:40px;
+				display:inline-block;
+				cursor: pointer;
+			}
+			.down-choose {
+				width:70px;
+				height:26px;
+				line-height: 26px;
+				text-align: center;
+				border-radius:3px;
+				color:@main-color-current;
+				border:1px solid @main-color-current;
+				display:inline-block;
+				margin-bottom:7px;
+				cursor: pointer;
+			}
+			.pager {
+				float:right;
+				font-size: 12px;
+				margin-right:10px;
+				display:flex;
+				.goods-total,.pager-num {
+					margin-right:10px;
+				}
+				lmminpager{
+
+				}
+			}
+		}
+		.goods-list {
+			width:100%;
+			.thead ,tr{
+				width:100%;
+				height:50px;
+				line-height: 50px;
+				text-align: center;
+			}
+			.thead {
+				font-size:16px;
+				border-bottom:2px solid @main-color-border;	
+				td {
+					width:20%;
+				}				
+			}
+			.tbody {
+				width:100%;
+				font-size:12px;
+				tr {
+					border-bottom:2px solid @main-color-border;
+					td  {
+						margin:0;
+						.checkbox-table {
+							margin-top:20px;
+						}
+						.barcode {
+							
+						}
+						.down,.split,.detail {
+							margin-right:10px;
+							color:@main-color-blue;
+							cursor: pointer;
+						}
+						a {
+							color:@main-color-blue;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}

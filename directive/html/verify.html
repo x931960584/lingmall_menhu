@@ -1,0 +1,63 @@
+<div class="verify" lmchecker>
+	<div class="leftbar">商品数据审核</div>
+	<div class="right-content">
+		<div class="content-title">
+			<div class="title-text" ng-click="back()">向上一级</div>
+		</div>
+		<!--单个商品条形码审核 -->
+		<div class="audit-barcode">
+			<div class="content-detail">
+				<!-- <div class="goods-data">商品数据：</div>
+				<div class="status-select">全部
+					<i class="iconfont xiala">&#xe612;</i>
+				</div> -->
+				<div class="status-text">状态：</div>
+				<lmselect name='serviceDetailStatus' is-vertical="1"></lmselect>
+
+				<div class="barcode-text">条形码：</div>
+				<input class="barcode-input" type="text"/>
+				<div class="btn search-btn" ng-click="search()">
+					<i class="iconfont search-icon">&#xe611;</i>
+					<span class="search-text">搜索</span>
+				</div>
+			</div>
+			<div class="choose-all">
+				<div class="checkbox" ng-class="{'checkon':isAllChecked}" ng-click='checkAll()'></div>
+				<div class="choose-all-text">全选</div>
+				<div class="batch-audit-btn" ng-click="verify()">批量审核通过</div>
+				<div class="pager">
+					<div class="goods-total">{{totalCount}}件商品数据</div>
+					<lmminpager></lmminpager>
+				</div>
+			</div>
+			<table class="goods-list table">
+				<thead class="thead">
+					<tr>
+						<td>条形码</td>
+						<td>商品名称</td>
+						<!-- <td>商品类型</td> -->
+						<td>状态</td>
+						<td>操作</td>
+					</tr>
+				</thead>
+				<tbody class="tbody">
+					<tr ng-repeat="d in data">
+						<td>
+							<div>
+								<span ng-class="{'checkon':!!checkids[d.id]}" ng-click="check(d.id)" class="checkbox checkbox-table"></span>
+								<span class="barcode">{{d.barcode}}</span>
+							</div>
+						</td>
+						<td>{{d.name}}</td>
+						<!-- <td>{{shopTypeDict[d.classId]}}</td> -->
+						<td>{{statusDict[d.status]}}</td>
+						<td>
+							<span class="detail" ng-show="d.status!=1" ng-click="linkToDetail(d)">详情</span>
+						</td>
+					</tr>
+				</tbody>	
+			</table>
+		</div>
+		<lmpager></lmpager>
+	</div>
+</div>

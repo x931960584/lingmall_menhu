@@ -1,0 +1,46 @@
+﻿<div class="cashierdesk" lmconfirmlogin>
+	<div class="total-data">
+		<span class="total-count">订单号{{orderNo}}</span>
+	</div>
+	<table class="table shopgoods-box">
+		<thead class="thead">
+			<tr>
+				<td class="padd-left">条形码</td>
+				<td>商品名称</td>
+				<td>详细</td>
+				<td>价格</td>
+			</tr>
+		</thead>
+		<tbody class="tbody">
+			<tr class="choose-all" style="display: none;">
+				<td colspan="5">
+					<div class="checkbox" ng-class="{'checkon':isAllChecked}" ng-click="checkAll()"></div>全选
+				</td>
+			</tr>
+			<tr ng-repeat="d in data | limitTo : pageSize">
+				<td>
+					<div  style="visibility: hidden;" class="checkbox checkbox-pos" ng-class="{'checkon':!!checkids[d.goodsId]}"  ng-click="check(d.goodsId)" ></div>
+					{{d.barcode}}
+				</td>
+				<td>{{d.name}}</td>
+				<td>标准图：{{d.pictureNum}}&nbsp;张,营销图：{{d.detailPageNum}}&nbsp;张</td>
+				<td>{{d.price | currency : '¥' : 2}}</td>
+			</tr>
+			<tr class="seemore">
+				<td colspan="5" ng-show="totalCount>pageSize" ng-click="more()">点击加载更多...</td>
+			</tr>
+		</tbody>
+	</table>
+	<table class="settlement table">
+		<tr>
+			<td class="go-settlement">
+				<div class="detail">
+					<span class="count">共{{totalCount}}SKU</span>
+					<span class="price">总价：{{totalPrice | currency : '¥' : 2}} </span>
+				</div>
+				<lmsettlement></lmsettlement>
+			</td>
+		</tr>
+	</table>
+</div>
+</div>

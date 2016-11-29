@@ -1,0 +1,36 @@
+<!-- <div class="bg" ng-show="!isHome"> -->
+<!-- <div class="bg">
+	<ul>
+		<li class="homeicon iconfont menuleft" ng-if="isHome">&#xe60d;&nbsp;&nbsp;欢迎来到商品数据服务交易平台</li>
+		<li class="homeicon iconfont menuleft curp" ng-if="!isHome" ng-click="linkTo('/')">&#xe60d;&nbsp;&nbsp;零猫首页</li>
+		<li class="menuright curp">
+			<a ng-click="linkToMyLm()">
+				<i class="iconfont">&#xe60c;</i>
+				我的零猫
+			</a>
+		</li>
+		<div class="claer_serif fr">&nbsp;</div>
+		<li class="menuright curp" ng-show="$root.isLogin"><a ng-click="logout()">退出</a></li>
+		<li class="menuright" ng-show="$root.isLogin"><a>欢迎您,{{$root.username}}</a></li>
+		<li class="menuright curp" ng-show="!$root.isLogin"><a ng-click="linkTo('/loginpage')">登录</a></li>
+		<li class="menuright activeText" ng-show="!$root.isLogin"><a ng-click="linkTo('/registerpage')">免费注册</a></li>
+	</ul>
+</div> -->
+
+<div class="bg">
+	<ul>
+		<li class="homeicon iconfont menuleft" ng-if="isHome">&#xe60d;&nbsp;&nbsp;欢迎来到商品数据服务交易平台</li>
+		<li class="homeicon iconfont menuleft curp" ng-if="!isHome" ng-click="linkTo('/')">&#xe60d;&nbsp;&nbsp;零猫首页</li>
+		<li class="menuright curp">
+			<a ng-click="linkToMyLm()">
+				<i class="iconfont">&#xe605;</i>
+				我的零猫
+			</a>
+		</li>
+		<!-- <div class="claer_serif fr">&nbsp;</div> -->
+		<li class="menuright curp" ng-show="$root.isLogin"><a ng-click="logout()">退出</a></li>
+		<li class="menuright" ng-show="$root.isLogin"><a>欢迎您,{{$root.username}}</a></li>
+		<li class="menuright curp" ng-show="!$root.isLogin"><a ng-click="linkTo('/loginpage')">登录</a></li>
+		<li class="menuright activeText" ng-show="!$root.isLogin"><a ng-click="linkTo('/registerpage')">免费注册</a></li>
+	</ul>
+</div>

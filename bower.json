@@ -1,0 +1,34 @@
+{
+  "name": "lingmao_manager_web",
+  "authors": [
+    "tongjinle <1328192478@qq.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "es6"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "underscore": "~1.8.3",
+    "angular": "~1.4.8",
+    "jquery": "1.7.2",
+    "angular-route": "~1.4.8",
+    "async": "~1.5.2",
+    "cookie": "~1.1.0",
+    "DateJS": "datejs#~1.0.0-rc3",
+    "angular-md5": "~0.1.10",
+    "requirejs": "~2.1.22",
+    "jszip": "^2.5.0",
+    "filesaver": "*",
+    "DatePicker": "https://github.com/foxrunsoftware/DatePicker.git"
+  }
+}

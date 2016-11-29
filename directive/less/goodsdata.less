@@ -1,0 +1,119 @@
+@import "../../less/colors";
+lmgoodsdata {
+	.wrap {
+		background-color: @main-color-body;
+	}
+	.container{	
+		width:1200px;
+		margin:0 auto;
+		.all-category {
+			font-family: "宋体";
+			font-size: 12px;
+			width:1198px;
+			height:45px;
+			line-height: 45px;
+			border:1px solid @main-color-border;
+			margin-top:20px;
+			background-color: #fff;
+			overflow-y:hidden;
+			.category {
+				float:left;
+				width:180px;
+				color:#666;
+				background-color:#f3f3f3;
+				text-align: center;
+			}
+			dd {
+				float: left;
+				margin-right: 55px;
+				color:#333;
+				cursor: pointer;
+			}
+			dd:hover {
+				color:@main-color-hover;
+			}
+			span {
+				/*float:right;*/
+				margin-left:100px;
+				cursor: pointer;
+			}
+			.category-more {
+				float:right;
+				width:1020px;
+				border:1px solid @main-color-border;
+				border-top:none;
+				position:absolute;
+				margin:45px 0 0 179px;
+				background-color: #fff;
+				.more-list {
+					height:100%;
+					li {
+						float:left;
+						margin-right:55px;
+					}
+					li:hover {
+						color:@main-color-hover;
+					}
+				}
+			}			
+		}
+		.moreHeight{
+			height:auto!important;
+		}
+		.mar-left42 {
+			margin-left:42px;
+		}
+		.category-content {
+			width:1200px;
+			.category-title {
+				font-family: "微软雅黑";
+				font-size: 16px;
+				color:#666;
+				margin:40px 0 10px 0;
+				.seemore{
+					float:right;
+					font-size: 12px;
+					font-family: "宋体";
+					color:#666;
+					cursor: pointer;
+				}
+			}
+			.category-list {
+				ul {
+					width:1210px;
+					margin-right:-10px;
+				}
+				.category-detail {
+					float:left;
+					width:230px;
+					height:277px;
+					border:1px solid @main-color-border;
+					background-color:#fff;
+					margin:0 10px 10px 0; 
+					.category-img {
+						width:230px;
+						height:232px;
+						cursor: pointer;
+						img {
+							width:230px;
+							height:232px;
+						}
+					}
+					.category-text {
+						height:45px;
+						/*line-height: 45px;*/
+						text-align: center;
+						color: @main-color-text;
+						padding:15px 5px;
+						font-size: 12px;
+						font-family: "宋体";
+						overflow: hidden;
+					    text-overflow: ellipsis;
+					    white-space: nowrap;
+					    cursor: default;
+					}
+				}
+			}
+		}
+	}
+};

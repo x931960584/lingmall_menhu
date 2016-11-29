@@ -1,0 +1,408 @@
+@import "../../less/colors";
+lmproductdetail{
+	.wrap {
+		width:100%;
+		font-family:"微软雅黑";
+		.contanier {
+			width:1200px;
+			margin:0 auto;
+			color:#444;
+			padding-bottom:80px;
+			.content {
+				margin-top:30px;
+				.content-img {
+					float:left;
+					width:500px;
+					height:500px;
+					border:@main-color-border 1px solid;
+					position: relative;
+					.glass{
+						position: absolute;
+						width: 250px;
+						height: 250px;
+						opacity: .1;
+						background-color: #000;
+						left: 0px;
+						top: 0px;
+					}
+					.glassHelper{
+						position: absolute;
+						width: 500px;
+						height: 500px;
+						opacity: 0;
+						z-index: 9999;
+						background-color: yellow;
+						left: 0px;
+						top: 0px;
+					}
+				}
+				.img-kind {
+					float:right;
+					width:650px;
+					>p {
+						padding-bottom:12px;
+					}
+					.item-title{
+						font-size:20px;
+						line-height:26px;
+						.prompt-text {
+							font-size:12px;
+							color:red;
+						}
+					}
+					.item-box {
+						width:650px;
+						height:20px;
+						background-color:#f3f3f3;
+					}
+					dl {
+						margin-top:30px;
+						dd {
+							float:left;
+							width:100%;
+							height:75px;
+							line-height:75px;
+							margin-bottom:30px;
+							display:inline-block;
+							font-size:16px;
+							.img-list{
+								.img-title {
+									text-align:left;
+									background-color:#fff!important;
+									width:55px;
+									color:#888;
+								}
+								li{
+								float:left;
+								width:75px;
+								height:100%;
+								margin-left:5px;
+								margin-right:5px;
+								}
+								img{
+									width:75px;
+									height:75px;
+									border:@main-color-border 1px solid;
+								}
+								img:hover{
+									cursor:pointer;
+									border:#feda3b 2px solid;
+									box-shadow:0px 0px 3px @main-color-border;
+									opacity:0.8;
+								}
+								.img-currBorder {
+									border:2px solid #feda3b;
+								}
+							}
+							.addShopcart-btn {
+								width: 240px;
+								height: 40px;
+								line-height: 40px;
+								text-align: center;
+								border-radius: 3px;
+								background-color: #f96b6a;
+								color: #fff;
+								cursor: pointer;
+								margin-left: 20px;
+							}
+						}
+					}
+					.turnpicsbtn{
+						height:77px;
+						width:24px;
+						text-align:center;
+						background-color:#f1f1f1;
+						color:#f1f1f1;
+						border:#f1f1f1 1px solid;
+						font-size:14px;
+						margin-left:6px;
+						margin-right:6px;
+						cursor:pointer;
+						border:@main-color-border 1px solid;
+						color:#999;
+						float:left;
+					}
+					.turnpicsbtn:hover{
+						background-color:#f9f9f9;
+					}
+					.add-cart {
+						float:left;
+						margin:20px 0 0 70px;
+						text-align:right;
+						display:inline;
+						button{
+						}
+						.addgood1{
+							background-color:@main-color;
+							color:@main-color-text;
+						}
+						.addgood1:hover{
+							cursor:pointer;
+							background-color:@main-color-button-hover;
+							box-shadow:0px 0px 2px @main-color-dark;
+						}
+						.addgood2{
+							background-color:#CCC;
+							color:#fff;
+						}
+						.btn{
+							width:150px;
+							height:42px;
+							font-family:microsoft yahei;
+							font-size:18px;
+							border:0;
+						}
+					}	
+				}
+				.titanImg{
+					border: @main-color-border 1px solid;
+					position:absolute;
+					width: 500px;
+					height: 500px;
+				}
+			}
+			.detail {
+				margin-top:50px;
+				font-family:serif;
+				.sidebar-title {
+					font-size:20px;
+					padding-bottom:10px;
+				}
+				.sidebar {
+					float:left;
+					width:380px;
+					
+					.sidebar-content {
+						border:1px solid @main-color-border;
+						border-top:none;
+						font-size:14px;				
+						.sidebar-head{
+							font-family:microsoft yahei;
+							font-size:18px;
+							height:60px;
+							line-height:60px;
+							background-color:#f8f8f8;
+							text-align:left;
+							padding-left:10px;
+							border-top:1px solid @main-color-border;
+							border-bottom:1px solid @main-color-border;
+							span{
+								border-left:#ff6800 3px solid;
+								padding-left:10px;
+							}
+						}
+						ul {
+							padding:20px 20px;
+							li {
+								height:36px;
+								line-height:36px;
+							}
+						}
+						.sell-point {
+							padding:20px;
+							p {
+								letter-spacing:1px;					
+								line-height:30px;
+							}
+						}
+					}
+					
+				}
+				.info-list {
+					float:right;
+					width:800px;
+					ul:first-child {
+						height:58px;
+						border:1px solid @main-color-border;
+						border-left:none;
+						.current {
+							border-top:2px solid #ff6800;
+							margin-top: -1px;
+							a {
+								color:#ff6800;
+								font-family:microsoft yahei;
+								font-size:16px;
+							}
+							.arrow-down {
+								display:block;
+								overflow:hidden; 
+								border:6px solid #ff6800; 
+								border-color:#ff6800 #fff; 
+								border-width:6px 6px 0 6px; 
+								position:absolute; 
+								left:50%; 
+								top:0;
+								margin-left:-6px;
+							}
+						}
+						li {
+							float:left;
+							border-left:1px solid @main-color-border;							
+							text-align:center;
+							position:relative;
+							a {
+								width:198px;
+								height:58px;
+								line-height:57px;
+								color:#282828;
+								font-family:microsoft yahei;
+								font-size:16px;
+								cursor:pointer;
+								text-decoration:none;
+								display:block;
+							}
+
+						}
+					}
+					.info-detail {
+						li {
+							float:left;
+							width:380px;
+							height:70px;
+							line-height:70px;
+							border-bottom:1px solid @main-color-border;
+							margin-right:10px;
+							margin-left: 10px;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							white-space: nowrap;
+							text-indent:10px;
+							span{
+								font-size:12px;
+								line-height:20px;
+							}
+							.detail-title {
+								color:#ff6800;
+							}
+						}
+					}
+					.table {
+						font-size: 12px;
+						margin-top:20px;
+						tr {
+							line-height: 30px;
+							.info-name {
+								width:100px;
+								text-align: left;
+							}
+							.info-desc {
+								text-align: left;
+							}
+						}
+						.title {
+							font-weight:bold;
+						}
+						td {
+							border:1px solid #333;
+							padding:0 30px 0 10px;
+						}
+					}
+				}
+			}
+		}
+		.market {
+			background-color: #fcfcfc;
+			border-top: 1px solid #ececec;
+		    width: 100%;
+		    min-height: 456px;
+		    bottom: 0;
+			.market-content {
+				width:1200px;
+				margin:30px auto 0 auto;
+				font-size:14px;
+				padding-bottom:100px;
+				.market-title {
+					width:90px;
+					font-size:22px;
+					padding-bottom:10px;
+					border-bottom:3px solid @main-color-current;
+					margin-bottom:40px;
+				}
+				.market-img {
+					width:1200px;
+					li {
+						float:left;
+						width:198px;
+						height:238px;
+						border:1px solid #ececec;
+						background-color: #fff;
+						margin:0 27px 30px 0;
+						.img-box {
+							padding:0 10px 10px 10px;
+							img {
+								width:180px;
+								height:180px;
+								background-color:#fafafa;
+							}
+						}
+						.params  {
+							font-size:12px;
+							height:40px;
+							padding:0px 0 5px 10px;
+							.price {
+								color:red;
+								margin-bottom:5px;
+							}
+						}
+					}
+				}
+			}
+		}
+		.mask {
+			width:100%;
+			height:100%;
+			background-color:rgba(0,0,0,0.8);
+			text-align: center;
+			position: fixed;
+			top:0;
+			left:0;
+			overflow:scroll;
+			.close {
+				float:right;
+				width:44px;
+				height:44px;
+				line-height: 44px;
+				text-align: center;
+				background-color:#fff;
+				cursor: pointer;
+				i {
+					font-size:40px;
+				}
+			}
+			.img-box {
+				padding:10px;
+				margin:120px auto 100px auto;
+				text-align:center;
+				display: inline-block;
+				img {
+					max-width:1000px;
+					height:auto;
+				}
+			}
+		}
+		.clear {
+			clear:both;
+		}
+	}
+	lmpopupaddgoods{
+		z-index: 100;
+		position: fixed;
+		left: 50%;
+		top: 20%;
+		>*{
+			position: relative;
+			right: 50%;
+		}
+	}
+	lmpopuplogin{
+		
+	}
+
+	lmmodal{
+		.tip{
+			text-align: center;
+			color: green;
+			padding-top: 30px;
+		}
+	}
+}

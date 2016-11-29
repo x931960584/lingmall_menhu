@@ -1,0 +1,84 @@
+@import "../../less/colors";
+lmsidebar{
+	.sidebar{
+		position:fixed;
+		top:50%;
+		margin-top:-50px;
+		right:0px;
+		color:#eee;
+		.mincartbar{
+			width:50px;
+			height:150px;
+			float:right;
+			text-align:center;
+			padding-top:15px;
+			background:@main-color-black;
+			font-size:14px;
+			line-height:24px;
+			.iconfont{
+				font-size:30px;
+			}
+			.goodscount{
+				width:20px;
+				height:20px;
+				margin-top:5px;
+				border-radius:50%;
+				line-height:20px;
+				font-size:14px;
+				background:@main-color;
+				color:@main-color-black;
+			}
+		}
+		.mintelbar{
+			width:50px;
+			height:50px;
+			text-align:center;
+			background:@main-color-black;
+			font-size:30px;
+			line-height:46px;
+			letter-spacing:2px;
+			border-top:#555 1px dashed;
+			border-bottom:#555 1px dashed;
+		}
+		.exttelbar{
+			height:50px;
+			display:none;
+			.close_btn{
+				width:50px;
+				height:100%;
+				text-align:center;
+				line-height:50px;
+				font-size:40px;
+				background:@main-color;
+			}
+			.phone_num{
+				height:100%;
+				line-height:50px;
+				background:@main-color-black;
+				padding:0 10px;
+				border-top:#555 1px dashed;
+				border-bottom:#555 1px dashed;
+			}
+		}
+		.totop{
+			width:50px;
+			height:50px;
+			float:right;
+			text-align:center;
+			font-size:24px;
+			line-height:50px;
+			background:@main-color-black;
+		}
+	}
+	.telbar{
+		background:#333;
+	}
+	.telbar:hover{
+		.mintelbar{
+			display:none;
+		}
+		.exttelbar{
+			display:block;
+		}
+	}
+}

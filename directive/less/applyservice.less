@@ -1,0 +1,138 @@
+@import "../../less/colors.less";
+lmapplyservice {
+	.applyservice {
+		padding-top:20px;
+		background-color:#fcfcfc;
+		min-width:1200px;
+		min-height:890px;
+		font-size:14px;
+		font-family: "微软雅黑";
+		.leftbar {
+			float:left;
+			width:200px;
+			height:50px;
+			line-height: 50px;
+			text-align: center;
+			border:1px solid @main-color-border;
+			border-radius:3px;
+			background-color:#fff;
+			margin-left:40px;
+			font-size:16px;
+		}
+		.checkbox {
+			width: 14px;
+		    height: 14px;
+		    background: url("../../image/common/checkbox.png");
+		    display: inline-block;
+		    cursor: pointer;
+		}
+		.checkon {
+			background-position: 0 -14px;
+		}
+		.right-content {
+			padding:0 50px;
+			min-width:860px;
+			.content-title {
+				width:100%;
+				height:50px;
+				line-height: 50px;
+				text-align: center;
+				background-color:@main-color-background;
+				.title-text {
+					width:120px;
+					background-color:@main-color-current;
+					cursor: pointer;
+				}
+			}
+			.service-title {
+				width:100%;
+				height:50px;
+				line-height: 50px;
+				font-size:16px;
+				border-bottom:2px solid #ececec;
+			}
+			.service-box {
+				width:100%;
+				min-width:910px;
+				padding:0 20px 20px 20px;
+				background-color: #fff;
+				margin-top:20px;
+				.service-content {
+					text-align: center;
+					margin:0 auto;
+					margin-top:20px;
+					width:690px;
+					.type-text {
+						font-size: 16px;
+					}
+					.service-type {
+						li {
+							float:left;
+							margin-right:40px;
+							.checkbox {
+								margin-right:10px;
+							}
+						}
+					}
+					.ser-request {
+						margin-top:30px;
+						.request-text {
+							float:left;
+							width:150px;
+						}
+						textarea {
+							float:left;
+							width:500px;
+							height:150px;
+							border:1px solid #ececec;
+							border-radius:3px;
+							outline: none;
+						}
+					}
+				}
+			}
+			.contact-info-box {
+				margin-top:10px;
+				.contact-info {
+					width:310px;
+					margin:0 auto;
+					ul {
+						margin-top:30px;
+						li {
+							margin-bottom:10px;
+							.left-text {
+								width:85px;
+								text-align: right;
+								display:inline-block;
+								span {
+									color:red;
+								}
+							}
+							input {
+								width:200px;
+								height:38px;
+								line-height: 38px;
+								padding-left:10px;
+								border:1px solid #ececec;
+								border-radius:3px;
+								outline: none;
+							}
+						}
+					}
+					.apply-btn {
+						width:100px;
+						height:40px;
+						line-height: 40px;
+						text-align: center;
+						background-color:@main-color-current;
+						border-radius:3px;
+						color:#fff;
+						cursor: pointer;
+						margin-left:150px;
+					}
+				}
+			}
+		}
+		
+	}
+}

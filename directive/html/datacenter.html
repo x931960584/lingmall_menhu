@@ -1,0 +1,47 @@
+<div class="goods-content" lmconfirmlogin>
+	<div class="content-title">
+		<div class="title-text">数据超市</div>
+	</div>
+	<div class="table-box">
+		<table class="table content-center">
+			<tr>
+				<td>
+					<lmselect name="category"></lmselect>
+				</td>
+				<td colspan="2" class="btn-box">
+					<div class="search-box">
+						<input type="text" ng-model="keyword" />
+						<div class="search-btn" ng-click="searchByKeyword()">搜索</div>
+					</div>
+					<div class="batch-btn" ng-click="batchsearch()">批量搜索</div>
+				</td>
+				<td>
+					<lmshopcartbtn></lmshopcartbtn>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="content-detail">
+		<lmcatebar  name="category" is-multi='1' ng-show="isShowCatebar"></lmcatebar>
+		<div class="choose-box">
+			<div class="choose-all"  style="visibility: hidden;">
+				<div class="checkbox" ng-class="{'checkon':isAllChecked}" ng-click="checkAll()"></div>全选
+			</div>
+			<div class="addgoods-btn" ng-click="shopcartAdd()" style="visibility: hidden;">加入购物车</div>
+			<div class="pager">
+				<span>共{{totalCount}}件商品</span>
+				<lmminpager></lmminpager>
+			</div>
+		</div>
+		<div class="category-list">
+			<div class="category-detail" ng-repeat="d in data">
+				<div class="checkbox" ng-class="{'checkon':!!checkids[d.goodsId]}" ng-click="check(d.goodsId)"  style="visibility: hidden;"></div>
+				<div class="category-img" ng-click="linkToDetail(d.goodsId)">
+					<img ng-src="{{d.img}}">
+				</div>
+				<div class="category-text" title="{{d.name}}">{{d.name}}</div>
+			</div>
+		</div>
+	</div>
+</div>
+<lmpager></lmpager>

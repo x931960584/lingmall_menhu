@@ -1,0 +1,31 @@
+@import "../../less/colors.less";
+lmshopcartbtn {
+	.shop-cart {
+		float:right;
+		width:140px;
+		height:40px;
+		line-height: 40px;
+		text-align: center;
+		border:1px solid @main-color-current;
+		background-color:@main-color-background;
+		padding:0 10px;
+		cursor: pointer;
+		position: relative;
+		.cart {
+			float:left;
+			color:@main-color-current;
+		}
+		.count {
+			width:20px;
+			height:20px;
+			line-height: 20px;
+			text-align: center;
+			border-radius:10px;
+			background-color: @main-color-current;
+			font-size: 12px;
+			position:absolute;
+			top:2px;
+			right:6px;
+		}
+	}
+}

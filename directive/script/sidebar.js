@@ -1,0 +1,20 @@
+define(["app"],function(app){
+	app.directive("lmsidebar",function(){
+		return {
+			restrict:"E",
+			templateUrl:"../directive/html/sidebar.html",
+			link:function($scope,$element){
+				$scope.istop=true;
+				window.onscroll=function(){
+					if(document.body.scrollTop<10){
+						$scope.istop=true;
+					}else{
+						$scope.istop=false;
+					}
+					$scope.$apply();
+					//console.log($scope.istop);
+				}
+			}
+		};
+	});
+});

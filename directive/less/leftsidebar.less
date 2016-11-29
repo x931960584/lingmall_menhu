@@ -1,0 +1,32 @@
+@import "../../less/colors.less";
+lmleftsidebar {
+	font-family: "微软雅黑";
+	font-size:14px;
+	color:@main-color-text;
+	.sidebar {
+		float:left;
+		width:220px;
+		font-size:16px;
+		background-color: @main-color-background;
+		.current {
+			color:@main-color-current;
+			background-color: white;
+		}
+		ul {
+			li {
+				height:49px;
+				line-height: 49px;
+				text-align: center;
+				border-bottom:1px solid @main-color-border;
+				cursor: pointer;
+				a {
+					height:50px;
+					line-height: 50px;
+					border-bottom:1px solid #fff;
+					display:block;
+					color:@main-color-text;
+				}
+			}
+		}
+	}
+}

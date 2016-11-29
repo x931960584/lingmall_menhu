@@ -1,0 +1,30 @@
+<div class="wrap">
+	<div class="container">
+		<dl class="all-category" ng-class="{'moreHeight':isMoreHeight==true}">
+			<dt class="category">所有分类</dt>
+			<dd class="mar-left42" ng-repeat="c in categoryData" ng-click="toCategory(c);">{{c.value}}</dd>
+			<span ng-click="seeMore()" ng-show="!isShowSeemore">更多 
+				<i class="iconfont">&#xe61f;</i>
+			</span>
+			<span ng-click="hideMore()" ng-show="isShowSeemore">收起 
+				<i class="iconfont">&#xe61e;</i>
+			</span>
+		</dl>
+		<div class="category-content" ng-repeat="c in categoryData">
+			<div class="category-title">{{c.value}}<span class="seemore" ng-click="toCategory(c);">查看更多>></span></div>
+			<!-- {{c.id}} {{data}} -->
+			<div class="category-list">
+				<ul>
+					<li class="category-detail" ng-repeat="d in data[c.id]">
+						<div class="category-img"  ng-click="linkToDetail(d.goodsId)">
+							<img ng-src="{{d.pic}}">
+						</div>
+						<div class="category-text" title="{{d.name}}">
+							{{d.name}}
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

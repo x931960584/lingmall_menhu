@@ -1,0 +1,10 @@
+study/
+bower_components/
+node_modules/
+tsconfig.json
+controller/dist/
+directive/dist/
+service/dist/
+css/bundle.css
+filter/dist/filter-bundle.js
+minSrc/min.js

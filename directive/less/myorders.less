@@ -1,0 +1,123 @@
+@import "../../less/colors.less";
+lmmyorders {
+	.myorders {
+		padding-top:20px;
+		background-color:#fcfcfc;
+		min-width:1200px;
+		min-height:890px;
+		font-size:14px;
+		font-family: "微软雅黑";
+		.leftbar {
+			float:left;
+			width:200px;
+			height:50px;
+			line-height: 50px;
+			text-align: center;
+			border:1px solid @main-color-border;
+			border-radius:3px;
+			background-color:#fff;
+			margin-left:40px;
+			font-size:16px;
+		}
+		.checkbox {
+			width: 14px;
+		    height: 14px;
+		    background: url("../../image/common/checkbox.png");
+		    display: inline-block;
+		    cursor: pointer;
+		}
+		.checkon {
+			background-position: 0 -14px;
+		}
+		.right-content {
+			padding:0 50px;
+			min-width:860px;
+			.content-title ,.all-orders {
+				width:100%;
+				height:50px;
+				line-height: 50px;
+				text-align: center;
+			}
+			.content-title {
+				background-color:@main-color-background;
+				.title-text {
+					width:120px;
+					background-color:@main-color-current;
+					cursor: pointer;
+				}
+			}
+			.all-orders {
+				background-color:#fff;
+				border-bottom:2px solid #ececec;
+				margin-top:20px;
+				.orders-title {
+					float:left;
+					font-size: 16px;
+					width:80px;
+					height:20px;
+					line-height: 20px;
+					margin:15px 0 0 15px;
+					border-left:2px solid @main-color-current;
+				}
+				.orders-num {
+					float:right;
+					margin-right:10px;
+					input {
+						width:200px;
+						height:26px;
+						line-height: 26px;
+						border:1px solid #ececec;
+						border-radius:3px;
+						padding-left:10px;
+						outline: none;
+					}
+					.search-btn {
+						width:80px;
+						height:30px;
+						line-height: 30px;
+						text-align: center;
+						background-color: @main-color-current;
+						border-radius:3px;
+						display:inline-block;
+						margin-bottom:-10px;
+						cursor: pointer;
+					}
+				}
+			}
+			.table {
+				width:100%;
+			}
+			.orders-table {
+				background-color:#fff;
+				margin-top:10px;
+				.thead {
+					border-bottom:2px solid #f2f2f2;
+					tr {
+						font-size:16px;
+						height:50px;
+						line-height: 50px;
+						text-align: left;
+					}
+				}
+				.padd-left {
+					padding-left:30px;
+				}
+				.tbody {
+					font-size: 12px;
+					tr {
+						height:60px;
+						line-height: 60px;
+						text-align: left;
+						border-bottom:1px solid #ececec;
+					}
+					.detail,.pay {
+						cursor: pointer;
+						a {
+							color:@main-color-blue;
+						}
+					}
+				}
+			}
+		}
+	}
+}

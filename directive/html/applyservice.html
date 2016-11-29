@@ -1,0 +1,45 @@
+<div class="applyservice" lmconfirmlogin>
+	<div class="leftbar">申请服务</div>
+	<div class="right-content">
+		<div class="content-title">
+			<div class="title-text">申请服务</div>
+		</div>
+		<div class="service-box">
+			<div class="service-title">订购增值服务</div>
+			<div class="service-content">
+				<div>
+					<ul class="service-type">
+						<li class="type-text">选择服务类型：</li>
+						<li ng-repeat="d in serviceType">
+							<div class="checkbox" ng-class="{'checkon':typeDict[d.resid]}" ng-click="selectType(d.resid)"></div>{{d.value}}
+						</li>
+					</ul>
+				</div>
+				<div class="ser-request">
+					<div class="request-text type-text">服务要求:</div>
+					<textarea ng-model="serviceDemand"></textarea>
+				</div>
+			</div>
+		</div>
+		<div class="contact-info-box service-box">
+			<div class="service-title">联系人信息</div>
+			<div class="contact-info">
+				<ul>
+					<li>
+						<div class="left-text">姓名 <span>*</span>：</div>
+						<input type="text" ng-model="name" />
+					</li>
+					<li>
+						<div class="left-text">联系电话 <span>*</span>：</div>
+						<input type="text" ng-model="phone" />
+					</li>
+					<li>
+						<div class="left-text">电子邮箱 <span>*</span>：</div>
+						<input type="text" ng-model="email" />
+					</li>
+				</ul>
+				<div class="apply-btn" ng-click="apply();">提交申请</div>
+			</div>
+		</div>
+	</div>
+</div>
